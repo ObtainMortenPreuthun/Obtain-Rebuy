@@ -1,0 +1,36 @@
+{
+  "id": "7c373e5d-a26d-4482-ab0c-84ebb2e460ba",
+  "name": "Obtain_CopySales",
+  "publisher": "OBTAIN",
+  "version": "1.0.0.7",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "dependencies": [{
+"id": "644f7e5b-a81c-408a-aaa2-766e655a80a3",
+"name": "Payment and Reconciliation Formats (DK)",
+"publisher": "Microsoft",
+"version": "26.4.37194.37425"
+}],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 89999
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": ["TranslationFile",
+    "NoImplicitWith"
+  ]
+}
