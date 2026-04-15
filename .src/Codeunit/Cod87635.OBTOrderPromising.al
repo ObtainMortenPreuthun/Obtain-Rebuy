@@ -17,7 +17,11 @@ codeunit 87635 "OBT Order Promising"
     begin
         if psh."Document Type" <> psh."Document Type"::Order then
             exit;
+#if not CLEAN28
         AvailabilityMgt.SetSalesHeader(OrderPromisingLine, psh);
+#else
+        AvailabilityMgt.SetSourceRecord(OrderPromisingLine, pSH);
+#endif
         AvailabilityMgt.CalcAvailableToPromise(OrderPromisingLine);
         AvailabilityMgt.UpdateSource(OrderPromisingLine);
         ReqLine.SetCurrentKey("Order Promising ID", "Order Promising Line ID", "Order Promising Line No.");

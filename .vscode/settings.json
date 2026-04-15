@@ -1,0 +1,11 @@
+{
+    "al.ruleSetPath": ".\\.vscode\\ExcessWarnings.ruleset.json",
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${UICop}",
+        "${PerTenantExtensionCop}",
+        "${analyzerFolder}BusinessCentral.LinterCop.dll"
+    ],
+    "editor.inlineSuggest.enabled": true
+}

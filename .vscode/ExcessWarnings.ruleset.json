@@ -1,0 +1,40 @@
+{   "name": "OBTAIN Excess Warnings",
+    "description": "RuleSet to suppress warnings that are currently ignored to allow for handling actionable errors.",
+    "rules": [
+        {
+            "id": "AA0215",
+            "action": "Hidden",
+            "justification": "Ignore File naming convention. Will be handled later."
+        },
+        {
+            "id": "AL0604",
+            "action": "Hidden",
+            "justification": "Ignore Implicit With - will be fixed"
+        },
+        {
+            "id": "AA0008",
+            "action": "Hidden",
+            "justification": "Ignore missing paranthesis - will be fixed"
+        },
+        {
+            "id": "AA0005",
+            "action": "Hidden",
+            "justification": "Ignore Begin-End - will be fixed"
+        },
+        {
+            "id": "LC0035",
+            "action": "Hidden",
+            "justification": "Ignore Begin-End - will be fixed"
+        },
+        {
+            "id": "LC0068",
+            "action": "Hidden",
+            "justification": "Ignore Begin-End - will be fixed"
+        },
+        {
+            "id": "LC0088",
+            "action": "Hidden",
+            "justification": "Ignore Begin-End - will be fixed"
+        }
+    ]
+}
