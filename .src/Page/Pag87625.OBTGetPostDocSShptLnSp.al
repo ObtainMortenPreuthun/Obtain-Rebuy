@@ -1,3 +1,9 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Finance.Dimension;
+using Microsoft.Inventory.Item.Catalog;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.History;
 
 /// <summary>
 /// Page OBT Get Post.Doc - S.ShptLn Sp (ID 87625).
@@ -10,6 +16,7 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
     SaveValues = true;
     SourceTable = "Sales Shipment Line";
     SourceTableView = sorting("Document No.", "Line No.") Order(descending) where(Quantity = filter(<> 0), Type = filter(Item));
+    ApplicationArea = All;
 
     layout
     {
@@ -20,7 +27,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 ShowCaption = false;
                 field("Document No."; Rec."Document No.")
                 {
-                    ApplicationArea = All;
                     HideValue = DocumentNoHideValue;
                     Lookup = false;
                     Width = 8;
@@ -30,28 +36,24 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Shipment Date"; Rec."Shipment Date")
                 {
-                    ApplicationArea = All;
                     Width = 5;
                     ToolTip = 'Specifies when items on the document are shipped or were shipped. A shipment date is usually calculated from a requested delivery date plus lead time.';
                     Editable = false;
                 }
                 field("Bill-to Customer No."; Rec."Bill-to Customer No.")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the number of the customer that you send or sent the invoice or credit memo to.';
                     Visible = false;
                     Editable = false;
                 }
                 field("Sell-to Customer No."; Rec."Sell-to Customer No.")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the number of the customer.';
                     Visible = false;
                     Editable = false;
                 }
                 field(Type; Rec.Type)
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the line type.';
                     Editable = false;
                     Visible = true;
@@ -59,7 +61,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("No."; Rec."No.")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the number of the involved entry or record, according to the specified number series.';
                     Editable = false;
                     Visible = true;
@@ -82,35 +83,30 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field(Nonstock; Rec.Nonstock)
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies that the item on the sales line is a catalog item, which means it is not normally kept in inventory.';
                     Visible = false;
                     Editable = false;
                 }
                 field(Description; Rec.Description)
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies either the name of or the description of the item, general ledger account or item charge.';
                     Editable = false;
                     Width = 20;
                 }
                 field("Description 2"; Rec."Description 2")
                 {
-                    ApplicationArea = All;
                     Visible = false;
                     ToolTip = 'Specifies information in addition to the description.';
                     Editable = false;
                 }
                 field("Return Reason Code"; Rec."Return Reason Code")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the code explaining why the item was returned.';
                     Visible = false;
                     Editable = false;
                 }
                 field("Location Code"; Rec."Location Code")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the location in which the invoice line was registered.';
                     Visible = false;
                     Editable = false;
@@ -118,7 +114,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Bin Code"; Rec."Bin Code")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the bin where the items are picked or put away.';
                     Visible = false;
                     Editable = false;
@@ -142,7 +137,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Unit of Measure Code"; Rec."Unit of Measure Code")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies how each unit of the item or resource is measured, such as in pieces or hours. By default, the value in the Base Unit of Measure field on the item or resource card is inserted.';
                     Editable = false;
                     Visible = true;
@@ -151,7 +145,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field(Quantity; Rec.Quantity)
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the number of units of the item, general ledger account, or item charge on the line.';
                     Editable = false;
                     Visible = true;
@@ -170,22 +163,22 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                     ToolTip = 'Specifies the new quantity to re-order.';
                     trigger OnValidate()
                     begin
-                        IF OBTQtyBuffer.GET(111, Rec."Document No.", rec."Line No.") then begin
-                            OBTQtyBuffer."OBT Quantity" := OBTQty;
-                            OBTQtyBuffer."OBT Item No." := rec."No.";
-                            OBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
-                            OBTQtyBuffer."OBT Line Type" := rec.Type;
-                            OBTQtyBuffer.Modify();
+                        IF TempOBTQtyBuffer.GET(111, Rec."Document No.", rec."Line No.") then begin
+                            TempOBTQtyBuffer."OBT Quantity" := OBTQty;
+                            TempOBTQtyBuffer."OBT Item No." := rec."No.";
+                            TempOBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
+                            TempOBTQtyBuffer."OBT Line Type" := rec.Type;
+                            TempOBTQtyBuffer.Modify();
                         end else begin
-                            clear(OBTQtyBuffer);
-                            OBTQtyBuffer."OBT Table Number" := 111;
-                            OBTQtyBuffer."OBT Document No." := rec."Document No.";
-                            OBTQtyBuffer."OBT Document Line No." := rec."Line No.";
-                            OBTQtyBuffer."OBT Item No." := rec."No.";
-                            OBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
-                            OBTQtyBuffer."OBT Line Type" := rec.Type;
-                            OBTQtyBuffer."OBT Quantity" := OBTQty;
-                            OBTQtyBuffer.Insert();
+                            clear(TempOBTQtyBuffer);
+                            TempOBTQtyBuffer."OBT Table Number" := 111;
+                            TempOBTQtyBuffer."OBT Document No." := rec."Document No.";
+                            TempOBTQtyBuffer."OBT Document Line No." := rec."Line No.";
+                            TempOBTQtyBuffer."OBT Item No." := rec."No.";
+                            TempOBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
+                            TempOBTQtyBuffer."OBT Line Type" := rec.Type;
+                            TempOBTQtyBuffer."OBT Quantity" := OBTQty;
+                            TempOBTQtyBuffer.Insert();
                         end;
                     end;
                 }
@@ -211,7 +204,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Qty. Shipped Not Invoiced"; Rec."Qty. Shipped Not Invoiced")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the quantity of the shipped item that has been posted as shipped but that has not yet been posted as invoiced.';
                     Editable = false;
                     Visible = false;
@@ -219,7 +211,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field(QtyNotReturned; QtyNotReturned)
                 {
-                    ApplicationArea = All;
                     Caption = 'Qty. Not Returned';
                     DecimalPlaces = 0 : 5;
                     ToolTip = 'Specifies the quantity from the posted document line that has been shipped to the customer and not returned by the customer.';
@@ -229,7 +220,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field(QtyReturned; GetQtyReturned())
                 {
-                    ApplicationArea = All;
                     Caption = 'Qty. Returned';
                     DecimalPlaces = 0 : 5;
                     ToolTip = 'Specifies the quantity that was returned.';
@@ -239,7 +229,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Unit of Measure"; Rec."Unit of Measure")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the name of the item or resource''s unit of measure, such as piece or hour.';
                     Visible = false;
                     Editable = false;
@@ -247,7 +236,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Unit Cost (LCY)"; Rec."Unit Cost (LCY)")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the cost, in LCY, of one unit of the item or resource on the line.';
                     Visible = false;
                     Editable = false;
@@ -255,7 +243,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field(RevUnitCostLCY; RevUnitCostLCY)
                 {
-                    ApplicationArea = All;
                     AutoFormatType = 2;
                     Caption = 'Reverse Unit Cost (LCY)';
                     ToolTip = 'Specifies the unit cost that will appear on the new document lines.';
@@ -265,7 +252,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Job No."; Rec."Job No.")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the number of the related job.';
                     Visible = false;
                     Editable = false;
@@ -273,7 +259,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Blanket Order No."; Rec."Blanket Order No.")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the number of the blanket order that the record originates from.';
                     Visible = false;
                     Editable = false;
@@ -281,7 +266,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Blanket Order Line No."; Rec."Blanket Order Line No.")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the number of the blanket order line that the record originates from.';
                     Visible = false;
                     Editable = false;
@@ -289,7 +273,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Appl.-from Item Entry"; Rec."Appl.-from Item Entry")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the number of the item ledger entry that the document or journal line is applied from.';
                     Visible = false;
                     Editable = false;
@@ -297,7 +280,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 }
                 field("Appl.-to Item Entry"; Rec."Appl.-to Item Entry")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies the number of the item ledger entry that the document or journal line is applied to.';
                     Editable = false;
                     Visible = false;
@@ -308,6 +290,7 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Item Comment';
+                    ToolTip = 'Specifies whether the item has a comment.';
                     Editable = false;
                     Visible = false;
                 }
@@ -326,7 +309,6 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
                 Image = Line;
                 action(ShowDocument)
                 {
-                    ApplicationArea = All;
                     Caption = 'Show Document';
                     Image = View;
                     ShortCutKey = 'Shift+F7';
@@ -383,6 +365,11 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
     begin
         if not Visible then
             exit(false);
+
+        if GoToFirstOnNextFind then begin
+            Which := '-';
+            GoToFirstOnNextFind := false;
+        end;
 
         IsHandled := false;
         OnFindRecordOnBeforeFind(Rec, Which, Result, IsHandled);
@@ -448,18 +435,18 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
         ToSalesHeader: Record "Sales Header";
         SalesShptLine: Record "Sales Shipment Line";
         TempSalesShptLine: Record "Sales Shipment Line" temporary;
+        TempOBTQtyBuffer: Record "OBT Get Post Buffer" temporary;
+        OBTItemCalcAvail: Codeunit "OBT Item CalcAvail ItemNo";
         QtyNotReturned: Decimal;
         RevUnitCostLCY: Decimal;
+        OBTQty: Decimal;
         RevQtyFilter: Boolean;
         FillExactCostReverse: Boolean;
         Visible: Boolean;
+        GoToFirstOnNextFind: Boolean;
         ShowRec: Boolean;
-        LocFilter: Text;
-        [InDataSet]
         DocumentNoHideValue: Boolean;
-        OBTItemCalcAvail: Codeunit "OBT Item CalcAvail ItemNo";
-        OBTQtyBuffer: Record "OBT Get Post Buffer" temporary;
-        OBTQty: Decimal;
+        LocFilter: Text;
 
 
 
@@ -542,6 +529,7 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
         if Visible then begin
             TempSalesShptLine.Reset();
             TempSalesShptLine.DeleteAll();
+            GoToFirstOnNextFind := true;
         end;
     end;
 
@@ -561,15 +549,15 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
     /// <param name="FromOBTQtyBuffer">VAR Record "OBT Sales Line Copy Buffer".</param>
     procedure OBTQtyBufferLine(var FromOBTQtyBuffer: Record "OBT Get Post Buffer")
     begin
-        OBTQtyBuffer.reset;
-        OBTQtyBuffer.SetFilter(OBTQtyBuffer."OBT Quantity", '<>%1', 0);
+        TempOBTQtyBuffer.reset;
+        TempOBTQtyBuffer.SetFilter(TempOBTQtyBuffer."OBT Quantity", '<>%1', 0);
         FromOBTQtyBuffer.reset;
         FromOBTQtyBuffer.deleteall;
-        IF OBTQtyBuffer.findfirst then
+        IF TempOBTQtyBuffer.findfirst then
             repeat
-                FromOBTQtyBuffer := OBTQtyBuffer;
+                FromOBTQtyBuffer := TempOBTQtyBuffer;
                 FromOBTQtyBuffer.insert;
-            until OBTQtyBuffer.next = 0;
+            until TempOBTQtyBuffer.next = 0;
 
     end;
 
@@ -616,9 +604,9 @@ page 87625 "OBT Get Post.Doc - S.ShptLn Sp"
 
     local procedure OBTGetOrderQty(): Decimal
     begin
-        clear(OBTQtyBuffer);
-        IF OBTQtyBuffer.get(111, rec."Document No.", rec."Line No.") THEN
-            exit(OBTQtyBuffer."OBT Quantity")
+        clear(TempOBTQtyBuffer);
+        IF TempOBTQtyBuffer.get(111, rec."Document No.", rec."Line No.") THEN
+            exit(TempOBTQtyBuffer."OBT Quantity")
         else
             exit(0);
     end;

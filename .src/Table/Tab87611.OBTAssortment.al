@@ -1,3 +1,10 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.CRM.Contact;
+using Microsoft.Finance.Dimension;
+using Microsoft.Inventory.Item;
+using Microsoft.Sales.Customer;
+
 /// <summary>
 /// Table OBT  (ID 87611).
 /// </summary>
@@ -6,6 +13,7 @@ table 87611 "OBT Assortment"
 {
     Caption = 'Assortment';
     LookupPageId = "OBT Assortments";
+    DrillDownPageId = "OBT Assortments";
     DataCaptionFields = "OBT Assortment Code", "OBT Assortment Description";
     DataClassification = ToBeClassified;
 
@@ -14,28 +22,28 @@ table 87611 "OBT Assortment"
         field(1; "OBT Assortment Code"; Code[20])
         {
             Caption = 'Assortment Code';
-
+            ToolTip = 'Specifies the code that identifies the assortment.', Comment = '%';
         }
         field(5; "OBT Assortment Description"; Text[100])
         {
             Caption = 'Assortment Description';
+            ToolTip = 'Specifies the description of the assortment.', Comment = '%';
         }
         field(11; "OBT Active from Date"; Date)
         {
             Caption = 'Assortment Active from Date';
-
-
+            ToolTip = 'Specifies the date from which the assortment is active.', Comment = '%';
         }
 
         field(12; "OBT Active to Date"; Date)
         {
             Caption = 'Assortment Active to Date';
-
-
+            ToolTip = 'Specifies the date until which the assortment is active.', Comment = '%';
         }
         field(13; "Dimension Set ID"; Integer)
         {
             Caption = 'Dimension Set ID';
+            ToolTip = 'Specifies a reference to a combination of dimension values.', Comment = '%';
             Editable = false;
             TableRelation = "Dimension Set Entry";
 
@@ -53,6 +61,7 @@ table 87611 "OBT Assortment"
         {
             CaptionClass = '1,2,1';
             Caption = 'Shortcut Dimension 1 Code';
+            ToolTip = 'Specifies the code for Shortcut Dimension 1.', Comment = '%';
             TableRelation = "Dimension Value".Code where("Global Dimension No." = const(1),
                                                           Blocked = const(false));
 
@@ -65,6 +74,7 @@ table 87611 "OBT Assortment"
         {
             CaptionClass = '1,2,2';
             Caption = 'Shortcut Dimension 2 Code';
+            ToolTip = 'Specifies the code for Shortcut Dimension 2.', Comment = '%';
             TableRelation = "Dimension Value".Code where("Global Dimension No." = const(2),
                                                           Blocked = const(false));
 
@@ -132,9 +142,9 @@ table 87611 "OBT Assortment"
     procedure SelectCustomers(pAssortmentCode: Code[20])
     var
         Customer: Record Customer;
+        CustomerAssortment: Record "OBT Customer Assortment";
         CustomerList: page "Customer List";
         CustomerFilter: Text;
-        CustomerAssortment: Record "OBT Customer Assortment";
     begin
         customerlist.SetTableView(Customer);
         CustomerList.LookupMode(true);
@@ -163,9 +173,9 @@ table 87611 "OBT Assortment"
     procedure SelectContacts(pAssortmentCode: Code[20])
     var
         Contact: Record Contact;
+        ContactAssortment: Record "OBT Contact Assortment";
         ContactList: page "Contact List";
         ContactFilter: Text;
-        ContactAssortment: Record "OBT Contact Assortment";
     begin
         ContactList.SetTableView(Contact);
         ContactList.LookupMode(true);
@@ -176,7 +186,7 @@ table 87611 "OBT Assortment"
             exit;
         Contact.RESET;
         Contact.SetFilter("No.", ContactFilter);
-        if Contact.FindFirst() then
+        if Contact.FindSet() then
             repeat
                 if not ContactAssortment.get(Contact."No.", pAssortmentCode) then begin
                     ContactAssortment."OBT Contact No." := Contact."No.";

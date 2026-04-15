@@ -1,3 +1,5 @@
+namespace Obtain.Rebuy;
+
 /// <summary>
 /// Codeunit OBT CopyDocument Event SI (ID 87632).
 /// </summary>

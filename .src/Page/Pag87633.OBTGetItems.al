@@ -1,3 +1,9 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Finance.Dimension;
+using Microsoft.Inventory.Item;
+using Microsoft.Sales.Document;
+
 /// <summary>
 /// Page OBT Item List -  (ID 87633).
 /// </summary>
@@ -20,7 +26,6 @@ page 87633 "OBT Item List"
                 ShowCaption = false;
                 field("No."; Rec."No.")
                 {
-                    ApplicationArea = All;
                     Lookup = false;
                     StyleExpr = 'Strong';
                     ToolTip = 'Specifies the item number';
@@ -29,20 +34,17 @@ page 87633 "OBT Item List"
                 }
                 field(Description; Rec.Description)
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Visible = true;
                     Width = 20;
                 }
                 field("Description 2"; Rec."Description 2")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Visible = false;
                 }
                 field(Type; Rec.Type)
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Visible = true;
                     Width = 4;
@@ -58,28 +60,27 @@ page 87633 "OBT Item List"
                     ToolTip = 'Specifies the quantity to order for the item.';
                     trigger OnValidate()
                     begin
-                        IF OBTQtyBuffer.GET(27, rec."No.", 0) then begin
-                            OBTQtyBuffer."OBT Quantity" := OBTQty;
-                            OBTQtyBuffer."OBT Item No." := rec."No.";
-                            OBTQtyBuffer."OBT Unit of Measure Code" := rec."Base Unit of Measure";
-                            OBTQtyBuffer."OBT Line Type" := OBTQtyBuffer."OBT Line Type"::Item;
-                            OBTQtyBuffer.Modify();
+                        IF TempOBTQtyBuffer.GET(27, rec."No.", 0) then begin
+                            TempOBTQtyBuffer."OBT Quantity" := OBTQty;
+                            TempOBTQtyBuffer."OBT Item No." := rec."No.";
+                            TempOBTQtyBuffer."OBT Unit of Measure Code" := rec."Base Unit of Measure";
+                            TempOBTQtyBuffer."OBT Line Type" := TempOBTQtyBuffer."OBT Line Type"::Item;
+                            TempOBTQtyBuffer.Modify();
                         end else begin
-                            clear(OBTQtyBuffer);
-                            OBTQtyBuffer."OBT Table Number" := 27;
-                            OBTQtyBuffer."OBT Document No." := Rec."No.";
-                            OBTQtyBuffer."OBT Document Line No." := 0;
-                            OBTQtyBuffer."OBT Item No." := rec."No.";
-                            OBTQtyBuffer."OBT Unit of Measure Code" := rec."Base Unit of Measure";
-                            OBTQtyBuffer."OBT Line Type" := OBTQtyBuffer."OBT Line Type"::Item;
-                            OBTQtyBuffer."OBT Quantity" := OBTQty;
-                            OBTQtyBuffer.Insert();
+                            clear(TempOBTQtyBuffer);
+                            TempOBTQtyBuffer."OBT Table Number" := 27;
+                            TempOBTQtyBuffer."OBT Document No." := Rec."No.";
+                            TempOBTQtyBuffer."OBT Document Line No." := 0;
+                            TempOBTQtyBuffer."OBT Item No." := rec."No.";
+                            TempOBTQtyBuffer."OBT Unit of Measure Code" := rec."Base Unit of Measure";
+                            TempOBTQtyBuffer."OBT Line Type" := TempOBTQtyBuffer."OBT Line Type"::Item;
+                            TempOBTQtyBuffer."OBT Quantity" := OBTQty;
+                            TempOBTQtyBuffer.Insert();
                         end;
                     end;
                 }
                 field(Inventory; OBTItemCalcAvail.OBXInventory(Rec."No.", '', ToSalesHeader."Location Code"))
                 {
-                    ApplicationArea = All;
                     Caption = 'Inventory';
                     Editable = false;
                     Visible = true;
@@ -100,7 +101,6 @@ page 87633 "OBT Item List"
                 }
                 field("Item Category Code"; Rec."Item Category Code")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Width = 4;
                     ToolTip = 'Specifies the item category code that is assigned to the item.';
@@ -108,102 +108,87 @@ page 87633 "OBT Item List"
 
                 field("Substitutes Exist"; Rec."Substitutes Exist")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Width = 1;
                     ToolTip = 'Specifies whether there are substitutes for the item.';
                 }
                 field("Assembly BOM"; Rec."Assembly BOM")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Width = 1;
                     ToolTip = 'Specifies whether the item is an assembly BOM.';
                 }
                 field("Base Unit of Measure"; Rec."Base Unit of Measure")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     ToolTip = 'Specifies the base unit of measure for the item.';
                 }
                 field("Cost is Adjusted"; Rec."Cost is Adjusted")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Width = 2;
                     ToolTip = 'Specifies whether the cost of the item is adjusted.';
                 }
                 field("Unit Cost"; Rec."Unit Cost")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Width = 4;
                     ToolTip = 'Specifies the unit cost of the item.';
                 }
                 field("Unit Price"; Rec."Unit Price")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Width = 4;
                     ToolTip = 'Specifies the unit price of the item.';
                 }
                 field("Vendor No."; Rec."Vendor No.")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                     Visible = true;
                     ToolTip = 'Specifies the number of the vendor that is associated with the item.';
                 }
                 field("Default Deferral Template Code"; Rec."Default Deferral Template Code")
                 {
-                    ApplicationArea = All;
                     Editable = false;
                 }
                 field("Costing Method"; Rec."Costing Method")
                 {
-                    ApplicationArea = All;
                     Visible = False;
                     Editable = false;
                 }
                 field(Blocked; Rec.Blocked)
                 {
-                    ApplicationArea = All;
                     Visible = False;
                     Editable = false;
                 }
                 field("Block Reason"; Rec."Block Reason")
                 {
-                    ApplicationArea = All;
                     Visible = False;
+                    ToolTip = 'Specifies why the item is blocked.';
                     Editable = false;
                 }
                 field("Assembly Policy"; Rec."Assembly Policy")
                 {
-                    ApplicationArea = All;
                     Visible = false;
                     Editable = false;
                 }
                 field("Gen. Prod. Posting Group"; Rec."Gen. Prod. Posting Group")
                 {
-                    ApplicationArea = All;
                     Visible = false;
                     Editable = false;
                 }
                 field(GTIN; Rec.GTIN)
                 {
-                    ApplicationArea = All;
                     Visible = false;
                     Editable = false;
                 }
                 field("Inventory Posting Group"; Rec."Inventory Posting Group")
                 {
-                    ApplicationArea = All;
                     Visible = false;
                     Editable = false;
                 }
                 field("Item Disc. Group"; Rec."Item Disc. Group")
                 {
-                    ApplicationArea = All;
                     Visible = false;
                     Editable = false;
 
@@ -221,10 +206,10 @@ page 87633 "OBT Item List"
 
                 action("Show Item")
                 {
-                    ApplicationArea = All;
                     Caption = 'Show Item';
                     Image = Item;
                     ShortcutKey = 'Shift+F5';
+                    ToolTip = 'Open the item card for the selected item.';
                     trigger OnAction()
                     begin
                         ShowItem();
@@ -286,7 +271,7 @@ page 87633 "OBT Item List"
     var
         ToSalesHeader: Record "Sales Header";
         gItem: record Item;
-        OBTQtyBuffer: Record "OBT Get Post Buffer" temporary;
+        TempOBTQtyBuffer: Record "OBT Get Post Buffer" temporary;
         OBTItemCalcAvail: Codeunit "OBT Item CalcAvail ItemNo";
         OBTQty: Decimal;
 
@@ -322,9 +307,9 @@ page 87633 "OBT Item List"
 
     local procedure OBTGetOrderQty(): Decimal
     begin
-        clear(OBTQtyBuffer);
-        IF OBTQtyBuffer.get(27, rec."No.", 0) THEN
-            exit(OBTQtyBuffer."OBT Quantity")
+        clear(TempOBTQtyBuffer);
+        IF TempOBTQtyBuffer.get(27, rec."No.", 0) THEN
+            exit(TempOBTQtyBuffer."OBT Quantity")
         else
             exit(0);
     end;
@@ -341,15 +326,15 @@ page 87633 "OBT Item List"
     /// <param name="FromOBTQtyBuffer">VAR Record "OBT Sales Line Copy Buffer".</param>
     procedure OBTQtyBufferLine(var FromOBTQtyBuffer: Record "OBT Get Post Buffer")
     begin
-        OBTQtyBuffer.reset;
-        OBTQtyBuffer.SetFilter(OBTQtyBuffer."OBT Quantity", '<>%1', 0);
+        TempOBTQtyBuffer.reset;
+        TempOBTQtyBuffer.SetFilter(TempOBTQtyBuffer."OBT Quantity", '<>%1', 0);
         FromOBTQtyBuffer.reset;
         //FromOBTQtyBuffer.deleteall;
-        IF OBTQtyBuffer.findfirst then
+        IF TempOBTQtyBuffer.findfirst then
             repeat
-                FromOBTQtyBuffer := OBTQtyBuffer;
+                FromOBTQtyBuffer := TempOBTQtyBuffer;
                 FromOBTQtyBuffer.insert;
-            until OBTQtyBuffer.next = 0;
+            until TempOBTQtyBuffer.next = 0;
 
     end;
 }

@@ -1,8 +1,8 @@
 {
   "id": "7c373e5d-a26d-4482-ab0c-84ebb2e460ba",
-  "name": "Obtain_CopySales",
+  "name": "Obtain Rebuy",
   "publisher": "OBTAIN",
-  "version": "27.0.0.8",
+  "version": "28.0.0.9",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -16,12 +16,12 @@
     "version": "26.4.37194.37425"
 }],
   "screenshots": [],
-  "platform": "27.0.0.0",
-  "application": "27.0.0.0",
+  "platform": "28.0.0.0",
+  "application": "28.0.0.0",
   "idRanges": [
     {
-      "from": 50000,
-      "to": 89999
+      "from": 87600,
+      "to": 87700
     }
   ],
   "resourceExposurePolicy": {

@@ -1,3 +1,8 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Sales.Customer;
+using Microsoft.Sales.Document;
+
 /// <summary>
 /// Codeunit OBT Sales Header Function (ID 87629).
 /// </summary>

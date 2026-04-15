@@ -1,3 +1,11 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Inventory.Item;
+using Microsoft.Sales.Customer;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.History;
+using Microsoft.Utilities;
+
 /// <summary>
 /// Page OBT  (ID 87624).
 /// </summary>
@@ -66,6 +74,7 @@ page 87624 "OBT Copy Sales Doc. Lines"
                         ApplicationArea = Basic, Suite;
                         CaptionClass = OptionCaptionServiceTier();
                         OptionCaption = 'Posted Shipments,Posted Invoices,Posted Return Receipts,Posted Cr. Memos,Items,Assortment Items';
+                        ToolTip = 'Specifies which type of posted document lines to show.';
 
                         trigger OnValidate()
                         begin
@@ -92,7 +101,7 @@ page 87624 "OBT Copy Sales Doc. Lines"
                         Visible = true;
                         Editable = false;
                     }
-                    field("STRSUBSTNO('(%1)',""No. of Pstd. Shipments"")"; StrSubstNo('(%1)', rec."No. of Pstd. Shipments"))
+                    field(NoOfPstdShipments; StrSubstNo('(%1)', rec."No. of Pstd. Shipments"))
                     {
                         ApplicationArea = Basic, Suite;
                         Caption = '&Posted Shipments';
@@ -106,7 +115,7 @@ page 87624 "OBT Copy Sales Doc. Lines"
                         Editable = false;
                         ToolTip = 'Specifies the lines that represent posted invoices.';
                     }
-                    field("STRSUBSTNO('(%1)',""No. of Pstd. Return Receipts"")"; StrSubstNo('(%1)', rec."No. of Pstd. Return Receipts"))
+                    field(NoOfPstdReturnReceipts; StrSubstNo('(%1)', rec."No. of Pstd. Return Receipts"))
                     {
                         ApplicationArea = Basic, Suite;
                         Caption = 'Posted Ret&urn Receipts';
@@ -148,42 +157,36 @@ page 87624 "OBT Copy Sales Doc. Lines"
                 ShowCaption = false;
                 part(PostedInvoices; "OBT Get Post.Doc - S.InvLn Sub")
                 {
-                    ApplicationArea = All;
                     SubPageLink = "Sell-to Customer No." = FIELD("No.");
                     SubPageView = SORTING("Sell-to Customer No.");
                     Visible = PostedInvoicesVisible;
                 }
                 part(PostedShpts; "OBT Get Post.Doc - S.ShptLn Sp")
                 {
-                    ApplicationArea = All;
                     SubPageLink = "Sell-to Customer No." = FIELD("No.");
                     SubPageView = SORTING("Sell-to Customer No.");
                     Visible = PostedShptsVisible;
                 }
                 part(PostedCrMemos; "OBT Get Post.Doc-S.Cr.MemoLn S")
                 {
-                    ApplicationArea = All;
                     SubPageLink = "Sell-to Customer No." = FIELD("No.");
                     SubPageView = SORTING("Sell-to Customer No.");
                     Visible = PostedCrMemosVisible;
                 }
                 part(PostedReturnRcpts; "OBT Get Pst.Doc-RtrnRcptLn Sub")
                 {
-                    ApplicationArea = All;
                     SubPageLink = "Sell-to Customer No." = FIELD("No.");
                     SubPageView = SORTING("Sell-to Customer No.");
                     Visible = PostedReturnRcptsVisible;
                 }
                 part(OBTItems; "OBT Item List")
                 {
-                    ApplicationArea = All;
                     SubPageView = sorting("No.");
                     SubPageLink = "OBT Assortment Filter" = field("OBT Assortment Filter");
                     Visible = gItemListVisible;
                 }
                 part(OBTItemsAssortment; "OBT Item List Assortment")
                 {
-                    ApplicationArea = All;
                     SubPageView = sorting("No.");
                     SubPageLink = "OBT Assortment Filter" = field("OBT Assortment Filter");
                     Visible = gItemListVisibleAssortment;
@@ -194,7 +197,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
         {
             Part("OBTItemInfo PostedShpts"; "OBT Item Information Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Information';
                 Visible = PostedShptsVisible;
                 Provider = PostedShpts;
@@ -203,7 +205,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             part("Item Comment PostedShpts"; "OBT Item Comment Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Comment';
                 Provider = PostedShpts;
                 SubPageLink = "No." = field("No."),
@@ -214,7 +215,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             Part("OBTItemInfo PostedInvoices"; "OBT Item Information Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Information';
                 Visible = PostedInvoicesVisible;
                 Provider = PostedInvoices;
@@ -223,7 +223,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             part("Item Comment PostedInvoices"; "OBT Item Comment Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Comment';
                 Provider = PostedInvoices;
                 SubPageLink = "No." = field("No."),
@@ -234,7 +233,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             Part("OBTItemInfo PostedCrMemos"; "OBT Item Information Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Information';
                 Visible = PostedCrMemosVisible;
                 Provider = PostedCrMemos;
@@ -243,7 +241,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             part("Item Comment PostedCrMemos"; "OBT Item Comment Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Comment';
                 Provider = PostedCrMemos;
                 SubPageLink = "No." = field("No."),
@@ -254,7 +251,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             Part("OBTItemInfo PostedReturnRcpts"; "OBT Item Information Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Information';
                 Visible = PostedReturnRcptsVisible;
                 Provider = PostedReturnRcpts;
@@ -263,7 +259,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             part("Item Comment PostedReturnRcpts"; "OBT Item Comment Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Comment';
                 Provider = PostedReturnRcpts;
                 SubPageLink = "No." = field("No."),
@@ -274,7 +269,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             Part("OBTItemInfo OBTItems"; "OBT Item Information Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Information';
                 Visible = gItemListVisible;
                 Provider = OBTItems;
@@ -283,7 +277,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             part("Item Comment OBTItems"; "OBT Item Comment Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Comment';
                 Provider = OBTItems;
                 SubPageLink = "No." = field("No."),
@@ -294,7 +287,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             Part("OBTItemInfo OBTItemsAssortment"; "OBT Item Information Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Information';
                 Visible = gItemListVisibleAssortment;
                 Provider = OBTItemsAssortment;
@@ -303,7 +295,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             }
             part("Item Comment OBTItemsAssortment"; "OBT Item Comment Factbox")
             {
-                ApplicationArea = All;
                 Caption = 'Item Comment';
                 Provider = OBTItemsAssortment;
                 SubPageLink = "No." = field("No."),
@@ -343,17 +334,16 @@ page 87624 "OBT Copy Sales Doc. Lines"
     end;
 
     var
-        OBTGetPostBufferTemp: Record "OBT Get Post Buffer" temporary;
+        TempOBTGetPostBuffer: Record "OBT Get Post Buffer" temporary;
         CopyDocMgt: Codeunit "Copy Document Mgt.";
+        ItemList2: Page "OBT Item List2";
         OldMenuType: Integer;
         LinesNotCopied: Integer;
         ShowRevLinesOnly: Boolean;
-        MissingExCostRevLink: Boolean;
-        Text000: Label 'The document lines that have a G/L account that does not allow direct posting have not been copied to the new document.';
         OriginalQuantity: Boolean;
-        Text002: Label 'Document Type Filter';
+        DirectPostingNotCopiedMsg: Label 'The document lines that have a G/L account that does not allow direct posting have not been copied to the new document.', Comment = '%';
+        Text002Lbl: Label 'Document Type Filter';
         CurrentMenuTypeOpt: Option x0,x1,x2,x3,x4,x5;
-        ItemList2: Page "OBT Item List2";
 
 
     protected var
@@ -375,11 +365,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
     /// </summary>
     procedure CopyLineToDoc()
     var
-        FromSalesShptLine: Record "Sales Shipment Line";
-        FromSalesInvLine: Record "Sales Invoice Line";
-        FromSalesCrMemoLine: Record "Sales Cr.Memo Line";
-        FromReturnRcptLine: Record "Return Receipt Line";
-        FromItem: record Item;
         IsHandled: Boolean;
     begin
         OnBeforeCopyLineToDoc(CopyDocMgt, CurrentMenuType);
@@ -390,34 +375,34 @@ page 87624 "OBT Copy Sales Doc. Lines"
         case CurrentMenuType of
             0:
                 begin
-                    CurrPage.PostedShpts.page.OBTQtyBufferLine(OBTGetPostBufferTemp);
-                    AddLinesOBTBuffer(OBTGetPostBufferTemp);
+                    CurrPage.PostedShpts.page.OBTQtyBufferLine(TempOBTGetPostBuffer);
+                    AddLinesOBTBuffer(TempOBTGetPostBuffer);
                 end;
             1:
                 begin
-                    CurrPage.PostedInvoices.PAGE.OBTQtyBufferLine(OBTGetPostBufferTemp);
-                    AddLinesOBTBuffer(OBTGetPostBufferTemp);
+                    CurrPage.PostedInvoices.PAGE.OBTQtyBufferLine(TempOBTGetPostBuffer);
+                    AddLinesOBTBuffer(TempOBTGetPostBuffer);
                 end;
             2:
                 begin
-                    CurrPage.PostedReturnRcpts.PAGE.OBTQtyBufferLine(OBTGetPostBufferTemp);
-                    AddLinesOBTBuffer(OBTGetPostBufferTemp);
+                    CurrPage.PostedReturnRcpts.PAGE.OBTQtyBufferLine(TempOBTGetPostBuffer);
+                    AddLinesOBTBuffer(TempOBTGetPostBuffer);
                 end;
             3:
                 begin
-                    CurrPage.PostedCrMemos.PAGE.OBTQtyBufferLine(OBTGetPostBufferTemp);
-                    AddLinesOBTBuffer(OBTGetPostBufferTemp);
+                    CurrPage.PostedCrMemos.PAGE.OBTQtyBufferLine(TempOBTGetPostBuffer);
+                    AddLinesOBTBuffer(TempOBTGetPostBuffer);
                 end;
             4:
                 begin
                     //CurrPage.OBTItems.PAGE.OBTQtyBufferLine(OBTGetPostBufferTemp);
-                    ItemList2.OBTQtyBufferLine(OBTGetPostBufferTemp);
-                    AddLinesOBTBuffer(OBTGetPostBufferTemp);
+                    ItemList2.OBTQtyBufferLine(TempOBTGetPostBuffer);
+                    AddLinesOBTBuffer(TempOBTGetPostBuffer);
                 end;
             5:
                 begin
-                    CurrPage.OBTItemsAssortment.PAGE.OBTQtyBufferLine(OBTGetPostBufferTemp);
-                    AddLinesOBTBuffer(OBTGetPostBufferTemp);
+                    CurrPage.OBTItemsAssortment.PAGE.OBTQtyBufferLine(TempOBTGetPostBuffer);
+                    AddLinesOBTBuffer(TempOBTGetPostBuffer);
                 end;
         end;
         Clear(CopyDocMgt);
@@ -426,7 +411,7 @@ page 87624 "OBT Copy Sales Doc. Lines"
         OnCopyLineToDocOnBeforeMessage(ToSalesHeader, IsHandled);
         if not IsHandled then
             if LinesNotCopied <> 0 then
-                Message(Text000);
+                Message(DirectPostingNotCopiedMsg);
     end;
 
     /// <summary>
@@ -475,9 +460,17 @@ page 87624 "OBT Copy Sales Doc. Lines"
                         ToSalesHeader, MenuType, ToSalesHeader."Currency Code"), Visible);
                 end;
             2:
-                PostedReturnRcptsVisible := Visible;
+                begin
+                    PostedReturnRcptsVisible := Visible;
+                    if Visible then
+                        CurrPage.PostedReturnRcpts.PAGE.GoToFirst();
+                end;
             3:
-                PostedCrMemosVisible := Visible;
+                begin
+                    PostedCrMemosVisible := Visible;
+                    if Visible then
+                        CurrPage.PostedCrMemos.PAGE.GoToFirst();
+                end;
             4:
                 begin
                     CurrPage.OBTItems.PAGE.Initialize(ToSalesHeader);
@@ -504,7 +497,7 @@ page 87624 "OBT Copy Sales Doc. Lines"
 
     local procedure OptionCaptionServiceTier(): Text[70]
     begin
-        exit(Text002);
+        exit(Text002Lbl);
     end;
 
     local procedure ShowRevLinesOnlyOnAfterValidat()
@@ -604,9 +597,7 @@ page 87624 "OBT Copy Sales Doc. Lines"
     /// <param name="pItem">VAR Record item.</param>    
     procedure AddItem(var pItem: Record item)
     var
-
         lSL: Record "Sales Line";
-        lItem: Record Item;
     begin
         if pItem.FindFirst() then
             repeat
@@ -627,7 +618,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
     procedure AddLinesOBTBuffer(var pOBTGetPostBuffer: record "OBT Get Post Buffer")
     var
         lSL: Record "Sales Line";
-        lItem: Record Item;
     begin
         if pOBTGetPostBuffer.findfirst then
             repeat
@@ -691,7 +681,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
     var
         CustomerAssortment: Record "OBT Customer Assortment";
         AssortmentFilter: Text;
-        lCount: Integer;
     begin
         pItem.Reset;
         AssortmentFilter := '';
@@ -711,7 +700,6 @@ page 87624 "OBT Copy Sales Doc. Lines"
             until CustomerAssortment.next = 0;
         pItem.SetFilter("OBT Assortment Filter", AssortmentFilter);
         pItem.Setrange("OBT In Assortment", true);
-        lCount := pItem.Count;
     end;
 
     [IntegrationEvent(false, false)]

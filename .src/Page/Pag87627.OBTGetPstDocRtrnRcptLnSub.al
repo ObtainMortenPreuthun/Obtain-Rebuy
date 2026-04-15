@@ -1,3 +1,9 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Finance.Dimension;
+using Microsoft.Inventory.Item.Catalog;
+using Microsoft.Sales.History;
+
 /// <summary>
 /// Page OBT Get Pst.Doc-RtrnRcptLn Sub (ID 87627).
 /// </summary>
@@ -9,6 +15,7 @@ page 87627 "OBT Get Pst.Doc-RtrnRcptLn Sub"
     PageType = ListPart;
     SourceTable = "Return Receipt Line";
     SourceTableView = sorting("Document No.", "Line No.") Order(descending);
+    ApplicationArea = All;
 
     layout
     {
@@ -87,7 +94,6 @@ page 87627 "OBT Get Pst.Doc-RtrnRcptLn Sub"
                 }
                 field("Description 2"; Rec."Description 2")
                 {
-                    ApplicationArea = All;
                     ToolTip = 'Specifies information in addition to the description.';
                     Editable = false;
 
@@ -152,29 +158,28 @@ page 87627 "OBT Get Pst.Doc-RtrnRcptLn Sub"
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Order Quantity';
+                    ToolTip = 'Specifies the new quantity to re-order.';
                     Editable = true;
                     DecimalPlaces = 0 : 2;
                     BlankZero = true;
                     trigger OnValidate()
-                    var
-                        lOBTGetDocumentLinesFunction: Codeunit OBTGetDocumentLinesFunction;
                     begin
-                        IF OBTQtyBuffer.GET(6661, Rec."Document No.", rec."Line No.") then begin
-                            OBTQtyBuffer."OBT Quantity" := OBTQty;
-                            OBTQtyBuffer."OBT Item No." := rec."No.";
-                            OBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
-                            OBTQtyBuffer."OBT Line Type" := rec.Type;
-                            OBTQtyBuffer.Modify();
+                        IF TempOBTQtyBuffer.GET(6661, Rec."Document No.", rec."Line No.") then begin
+                            TempOBTQtyBuffer."OBT Quantity" := OBTQty;
+                            TempOBTQtyBuffer."OBT Item No." := rec."No.";
+                            TempOBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
+                            TempOBTQtyBuffer."OBT Line Type" := rec.Type;
+                            TempOBTQtyBuffer.Modify();
                         end else begin
-                            clear(OBTQtyBuffer);
-                            OBTQtyBuffer."OBT Table Number" := 6661;
-                            OBTQtyBuffer."OBT Document No." := rec."Document No.";
-                            OBTQtyBuffer."OBT Document Line No." := rec."Line No.";
-                            OBTQtyBuffer."OBT Item No." := rec."No.";
-                            OBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
-                            OBTQtyBuffer."OBT Line Type" := rec.Type;
-                            OBTQtyBuffer."OBT Quantity" := OBTQty;
-                            OBTQtyBuffer.Insert();
+                            clear(TempOBTQtyBuffer);
+                            TempOBTQtyBuffer."OBT Table Number" := 6661;
+                            TempOBTQtyBuffer."OBT Document No." := rec."Document No.";
+                            TempOBTQtyBuffer."OBT Document Line No." := rec."Line No.";
+                            TempOBTQtyBuffer."OBT Item No." := rec."No.";
+                            TempOBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
+                            TempOBTQtyBuffer."OBT Line Type" := rec.Type;
+                            TempOBTQtyBuffer."OBT Quantity" := OBTQty;
+                            TempOBTQtyBuffer.Insert();
                         end;
                     end;
                 }
@@ -237,6 +242,7 @@ page 87627 "OBT Get Pst.Doc-RtrnRcptLn Sub"
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Available';
+                    ToolTip = 'Specifies the available quantity of the item in the location of the order.';
                     Editable = false;
                     DecimalPlaces = 0 : 2;
                 }
@@ -244,6 +250,7 @@ page 87627 "OBT Get Pst.Doc-RtrnRcptLn Sub"
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Item Comment';
+                    ToolTip = 'Specifies whether the item has a comment.';
                     Editable = false;
                 }
             }
@@ -315,6 +322,11 @@ page 87627 "OBT Get Pst.Doc-RtrnRcptLn Sub"
         IsHandled: Boolean;
         ReturnValue: Boolean;
     begin
+        if GoToFirstOnNextFind then begin
+            Which := '-';
+            GoToFirstOnNextFind := false;
+        end;
+
         IsHandled := false;
         OnBeforeFindRecord(Which, Rec, ReturnValue, IsHandled);
         if IsHandled then
@@ -325,17 +337,22 @@ page 87627 "OBT Get Pst.Doc-RtrnRcptLn Sub"
 
     trigger OnOpenPage()
     begin
+        if Rec.FindFirst() then;
+    end;
+
+    procedure GoToFirst()
+    begin
+        GoToFirstOnNextFind := true;
     end;
 
     var
         ReturnRcptLine: Record "Return Receipt Line";
         TempReturnRcptLine: Record "Return Receipt Line" temporary;
-        [InDataSet]
-        DocumentNoHideValue: Boolean;
-
+        TempOBTQtyBuffer: Record "OBT Get Post Buffer" temporary;
         OBTItemCalcAvail: Codeunit "OBT Item CalcAvail ItemNo";
-        OBTQtyBuffer: Record "OBT Get Post Buffer" temporary;
         OBTQty: Decimal;
+        GoToFirstOnNextFind: Boolean;
+        DocumentNoHideValue: Boolean;
 
     local procedure IsFirstDocLine(): Boolean
     begin
@@ -410,23 +427,23 @@ page 87627 "OBT Get Pst.Doc-RtrnRcptLn Sub"
     /// <param name="FromOBTQtyBuffer">VAR Record "OBT Get Post Buffer".</param>
     procedure OBTQtyBufferLine(var FromOBTQtyBuffer: Record "OBT Get Post Buffer")
     begin
-        OBTQtyBuffer.reset;
-        OBTQtyBuffer.SetFilter(OBTQtyBuffer."OBT Quantity", '<>%1', 0);
+        TempOBTQtyBuffer.reset;
+        TempOBTQtyBuffer.SetFilter(TempOBTQtyBuffer."OBT Quantity", '<>%1', 0);
         FromOBTQtyBuffer.reset;
         FromOBTQtyBuffer.deleteall;
-        IF OBTQtyBuffer.findfirst then
+        IF TempOBTQtyBuffer.findfirst then
             repeat
-                FromOBTQtyBuffer := OBTQtyBuffer;
+                FromOBTQtyBuffer := TempOBTQtyBuffer;
                 FromOBTQtyBuffer.insert;
-            until OBTQtyBuffer.next = 0;
+            until TempOBTQtyBuffer.next = 0;
 
     end;
 
     local procedure OBTGetOrderQty(): Decimal
     begin
-        clear(OBTQtyBuffer);
-        IF OBTQtyBuffer.get(6661, rec."Document No.", rec."Line No.") THEN
-            exit(OBTQtyBuffer."OBT Quantity")
+        clear(TempOBTQtyBuffer);
+        IF TempOBTQtyBuffer.get(6661, rec."Document No.", rec."Line No.") THEN
+            exit(TempOBTQtyBuffer."OBT Quantity")
         else
             exit(0);
     end;

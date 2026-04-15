@@ -1,3 +1,10 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Inventory.Item;
+using Microsoft.Inventory.Item.Attribute;
+using Microsoft.Sales.Document;
+using System.Globalization;
+
 /// <summary>
 /// Table OBT Sales Line Attribute Value (ID 87609).
 /// </summary>
@@ -11,43 +18,53 @@ table 87609 "OBT Sales Line Attribute Value"
         field(1; "OBT Sales Document Type"; Enum "Sales Document Type")
         {
             Caption = 'Sales Document Type';
+            ToolTip = 'Specifies the type of the sales document.', Comment = '%';
         }
         field(2; "OBT Sales Document No."; Code[20])
         {
             Caption = 'Sales Document No.';
+            ToolTip = 'Specifies the document number of the sales document.', Comment = '%';
         }
         field(3; "OBT Sales Document Line No."; Integer)
         {
             Caption = 'Sales Document Line No.';
+            ToolTip = 'Specifies the line number of the sales document.', Comment = '%';
         }
         field(11; "OBT AttributeID"; Integer)
         {
             Caption = 'AttributeID';
+            ToolTip = 'Specifies the ID of the item attribute.', Comment = '%';
         }
         field(12; "OBT ID"; Integer)
         {
             Caption = 'ID';
+            ToolTip = 'Specifies the ID of the item attribute value.', Comment = '%';
         }
         field(13; "OBT Value"; Text[250])
         {
             Caption = 'Value';
+            ToolTip = 'Specifies the value of the item attribute.', Comment = '%';
         }
         field(14; "OBT Numeric Value"; Decimal)
         {
             Caption = 'Numeric Value';
+            ToolTip = 'Specifies the numeric value of the item attribute.', Comment = '%';
         }
         field(15; "OBT Date Value"; Date)
         {
             Caption = 'Date Value';
+            ToolTip = 'Specifies the date value of the item attribute.', Comment = '%';
         }
         field(16; "OBT Blocked"; Boolean)
         {
             Caption = 'Blocked';
+            ToolTip = 'Specifies whether the item attribute value is blocked.', Comment = '%';
         }
         field(20; "OBT Attribute Name"; Text[250])
         {
-            CalcFormula = Lookup("Item Attribute".Name WHERE(ID = FIELD("OBT AttributeID")));
+            CalcFormula = lookup("Item Attribute".Name WHERE(ID = FIELD("OBT AttributeID")));
             Caption = 'Attribute Name';
+            ToolTip = 'Specifies the name of the item attribute.', Comment = '%';
             Editable = false;
             FieldClass = FlowField;
         }
@@ -189,11 +206,11 @@ table 87609 "OBT Sales Line Attribute Value"
         exit(ItemAttrValueTranslation.Name);
     end;
 
-    local procedure OBTAppendUnitOfMeasure(String: Text; ItemAttribute: Record "Item Attribute"): Text
+    local procedure OBTAppendUnitOfMeasure(String: Text; ItemAttribute: Record "Item Attribute"): Text[250]
     begin
         if ItemAttribute."Unit of Measure" <> '' then
-            exit(StrSubstNo('%1 %2', String, Format(ItemAttribute."Unit of Measure")));
-        exit(String);
+            exit(CopyStr(StrSubstNo('%1 %2', String, Format(ItemAttribute."Unit of Measure")), 1, 250));
+        exit(CopyStr(String, 1, 250));
     end;
 }
 

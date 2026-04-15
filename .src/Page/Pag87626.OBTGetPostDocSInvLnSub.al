@@ -1,3 +1,11 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Finance.Dimension;
+using Microsoft.Inventory.Item;
+using Microsoft.Inventory.Item.Catalog;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.History;
+
 /// <summary>
 /// Page OBT Get Post.Doc - S.InvLn Sub (ID 87626).
 /// </summary>
@@ -9,6 +17,7 @@ page 87626 "OBT Get Post.Doc - S.InvLn Sub"
     PageType = ListPart;
     SourceTable = "Sales Invoice Line";
     SourceTableView = sorting("Document No.", "Line No.") Order(descending) where(Quantity = filter(<> 0), Type = filter(Item)); // Filter to show only Item lines with Quantity not equal to 0
+    ApplicationArea = All;
     layout
     {
         area(content)
@@ -293,7 +302,7 @@ page 87626 "OBT Get Post.Doc - S.InvLn Sub"
                     Visible = true;
                     Width = 4;
                 }
-                field("SalesInvHeader.""Currency Code"""; SalesInvHeader."Currency Code")
+                field(InvCurrencyCode; SalesInvHeader."Currency Code")
                 {
                     ApplicationArea = Suite;
                     Caption = 'Currency Code';
@@ -301,7 +310,7 @@ page 87626 "OBT Get Post.Doc - S.InvLn Sub"
                     Visible = false;
                     Editable = false;
                 }
-                field("SalesInvHeader.""Prices Including VAT"""; SalesInvHeader."Prices Including VAT")
+                field(InvPricesInclVAT; SalesInvHeader."Prices Including VAT")
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Prices Including VAT';
@@ -454,6 +463,11 @@ page 87626 "OBT Get Post.Doc - S.InvLn Sub"
         if not IsVisible then
             exit(false);
 
+        if GoToFirstOnNextFind then begin
+            Which := '-';
+            GoToFirstOnNextFind := false;
+        end;
+
         IsHandled := false;
         OnFindRecordOnBeforeFind(Rec, Which, Result, IsHandled);
         if IsHandled then
@@ -507,7 +521,7 @@ page 87626 "OBT Get Post.Doc - S.InvLn Sub"
 
     trigger OnOpenPage()
     begin
-
+        if Rec.FindFirst() then;
     end;
 
     var
@@ -524,11 +538,11 @@ page 87626 "OBT Get Post.Doc - S.InvLn Sub"
         RevQtyFilter: Boolean;
         FillExactCostReverse: Boolean;
         IsVisible: Boolean;
+        GoToFirstOnNextFind: Boolean;
         ShowRec: Boolean;
         OBTQty: Decimal;
 
     protected var
-        [InDataSet]
         DocumentNoHideValue: Boolean;
 
     local procedure IsFirstDocLine(): Boolean
@@ -645,6 +659,7 @@ page 87626 "OBT Get Post.Doc - S.InvLn Sub"
         if IsVisible then begin
             TempSalesInvLine.Reset();
             TempSalesInvLine.DeleteAll();
+            GoToFirstOnNextFind := true;
         end;
     end;
 

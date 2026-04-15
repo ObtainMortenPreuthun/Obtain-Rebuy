@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="en-US" original="Obtain_CopySales">
+  <file datatype="xml" source-language="en-US" target-language="da-DK" original="Obtain Rebuy">
     <body>
       <group id="body">
         <trans-unit id="Table 390420829 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -8,35 +8,70 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 390420829 - Field 3322554545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a reference to a combination of dimension values.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field Dimension Set ID - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 390420829 - Field 3322554545 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Dimension Set ID</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field Dimension Set ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 390420829 - Field 1069993089 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date from which the assortment is active.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field OBT Active from Date - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 390420829 - Field 1069993089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Active from Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field OBT Active from Date - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 390420829 - Field 3198005814 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date until which the assortment is active.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field OBT Active to Date - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 390420829 - Field 3198005814 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Active to Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field OBT Active to Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 390420829 - Field 1606343762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code that identifies the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field OBT Assortment Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 390420829 - Field 1606343762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field OBT Assortment Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 390420829 - Field 1342726215 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field OBT Assortment Description - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 390420829 - Field 1342726215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field OBT Assortment Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 390420829 - Field 1577567912 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 1.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field Shortcut Dimension 1 Code - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 390420829 - Field 1577567912 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Shortcut Dimension 1 Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field Shortcut Dimension 1 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 390420829 - Field 1003760969 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for Shortcut Dimension 2.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Assortment - Field Shortcut Dimension 2 Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 390420829 - Field 1003760969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Shortcut Dimension 2 Code</source>
@@ -48,25 +83,50 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3174439533 - Field 1606343762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code of the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Field OBT Assortment Code - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3174439533 - Field 1606343762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Field OBT Assortment Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3174439533 - Field 1342726215 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Field OBT Assortment Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3174439533 - Field 1342726215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Field OBT Assortment Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3174439533 - Field 409560346 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the contact.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Field OBT Contact Name - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3174439533 - Field 409560346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Contact Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Field OBT Contact Name - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3174439533 - Field 2209593394 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the contact number.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Field OBT Contact No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3174439533 - Field 2209593394 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Contact No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Field OBT Contact No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3174439533 - Field 1067066684 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the e-mail address of the contact.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Contact Assortment - Field OBT Copntact E-mail - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3174439533 - Field 1067066684 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Contact E-Mail</source>
@@ -78,25 +138,50 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1764315049 - Field 1606343762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code of the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Field OBT Assortment Code - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 1764315049 - Field 1606343762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Field OBT Assortment Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1764315049 - Field 1342726215 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Field OBT Assortment Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 1764315049 - Field 1342726215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Field OBT Assortment Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1764315049 - Field 1544922312 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the e-mail address of the customer.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Field OBT Customer E-mail - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 1764315049 - Field 1544922312 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customer E-mail</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Field OBT Customer E-mail - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1764315049 - Field 1559927326 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the customer.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Field OBT Customer Name - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 1764315049 - Field 1559927326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customer Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Field OBT Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1764315049 - Field 4059428438 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer number.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Customer Assortment - Field OBT Customer No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 1764315049 - Field 4059428438 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customer No.,</source>
@@ -108,35 +193,70 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1342824281 - Field 898129393 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line number of the posted document.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Document Line No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 1342824281 - Field 898129393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document Line No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Document Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1342824281 - Field 723000547 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number of the posted document.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Document No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 1342824281 - Field 723000547 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Document No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1342824281 - Field 199951645 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item number.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Item No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 1342824281 - Field 199951645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1342824281 - Field 3055822809 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the sales line.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Line Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 1342824281 - Field 3055822809 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Line Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Line Type - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1342824281 - Field 1940315438 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity of the item.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Quantity - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 1342824281 - Field 1940315438 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Quantity </source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Quantity - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1342824281 - Field 1067862640 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the table number of the posted document.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Table Number - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 1342824281 - Field 1067862640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Number</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Table Number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1342824281 - Field 3797659853 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unit of measure code for the item.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Get Post Buffer - Field OBT Unit of Measure Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 1342824281 - Field 3797659853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unit of Measure Code</source>
@@ -148,20 +268,40 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Item Assortment - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3931581722 - Field 1606343762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code of the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Item Assortment - Field OBT Assortment Code - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3931581722 - Field 1606343762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Item Assortment - Field OBT Assortment Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3931581722 - Field 1342726215 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Item Assortment - Field OBT Assortment Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3931581722 - Field 1342726215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Item Assortment - Field OBT Assortment Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3931581722 - Field 2983740166 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the item.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Item Assortment - Field OBT Item Description - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3931581722 - Field 2983740166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Item Assortment - Field OBT Item Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3931581722 - Field 199951645 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item number.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Item Assortment - Field OBT Item No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3931581722 - Field 199951645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item No.,</source>
@@ -173,50 +313,100 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 630812102 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the item attribute.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Attribute Name - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 4180864740 - Field 630812102 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Attribute Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Attribute Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 182091644 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ID of the item attribute.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT AttributeID - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 4180864740 - Field 182091644 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AttributeID</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT AttributeID - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 2535934867 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the item attribute value is blocked.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Blocked - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 4180864740 - Field 2535934867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Blocked</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Blocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 1448040730 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date value of the item attribute.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Date Value - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 4180864740 - Field 1448040730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Date Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Date Value - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 722875152 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ID of the item attribute value.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT ID - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 4180864740 - Field 722875152 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>ID</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 171905283 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the numeric value of the item attribute.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Numeric Value - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 4180864740 - Field 171905283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Numeric Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Numeric Value - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 2012871929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line number of the sales document.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Sales Document Line No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 4180864740 - Field 2012871929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Document Line No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Sales Document Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 2037690427 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number of the sales document.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Sales Document No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 4180864740 - Field 2037690427 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Document No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Sales Document No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 1207861650 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the sales document.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Sales Document Type - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 4180864740 - Field 1207861650 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Document Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Sales Document Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4180864740 - Field 1396444638 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the item attribute.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Attribute Value - Field OBT Value - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 4180864740 - Field 1396444638 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Value</source>
@@ -228,70 +418,140 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a description of the item on the sales line.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Description - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3897407470 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 47657272 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information in addition to the description.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Description 2 - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3897407470 - Field 47657272 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Description 2</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Description 2 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Document No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3897407470 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 2363328873 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the document.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Document Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3897407470 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Document Type - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 3320823955 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line number.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Line No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3897407470 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Line No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 2161572060 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the location from which the items were shipped.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Location Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3897407470 - Field 2161572060 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Location Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Location Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the involved entry or record.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3897407470 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 1915851633 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the posting group of the sales line.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Posting Group - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3897407470 - Field 1915851633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Posting Group</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Posting Group - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity on the sales line.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Quantity - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3897407470 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Quantity</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 1225278069 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the customer number.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Sell-to Customer No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3897407470 - Field 1225278069 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sell-to Customer No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Sell-to Customer No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 4112852368 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date on which the items on the line are planned to be shipped.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Shipment Date - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3897407470 - Field 4112852368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Shipment Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Shipment Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 2283884360 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the entry was created by the system.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field System-Created Entry - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3897407470 - Field 2283884360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>System-Created Entry</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field System-Created Entry - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the sales line.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Type - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3897407470 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897407470 - Field 1920046521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unit of measure for the item on the sales line.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table OBT Sales Line Copy Buffer - Field Unit of Measure - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 3897407470 - Field 1920046521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unit of Measure</source>
@@ -303,6 +563,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortment Contacts - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1452374308 - Action 1232111348 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select contacts to add to the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortment Contacts - Action SelectContact - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1452374308 - Action 1232111348 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Contacts</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -312,6 +577,11 @@
           <source>Assortment Customers</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortment Customers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3964235248 - Action 2097052985 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select customers to add to the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortment Customers - Action SelectCustomers - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3964235248 - Action 2097052985 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Customers</source>
@@ -323,6 +593,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortment Items - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2780426367 - Action 2373246346 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select items to add to the assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortment Items - Action SelectItems - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2780426367 - Action 2373246346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Assortment Items</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -332,41 +607,6 @@
           <source>Assortments</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 4165666164 - Control 3322554545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows the value</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Control Dimension Set ID - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4165666164 - Control 1069993089 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows the value</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Control OBT Active from Date - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4165666164 - Control 3198005814 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows the value</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Control OBT Active to Date - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4165666164 - Control 1606343762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows the value</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Control OBT Assortment Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4165666164 - Control 1342726215 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows the value</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Control OBT Assortment Description - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4165666164 - Control 1577567912 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows the value</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Control Shortcut Dimension 1 Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4165666164 - Control 1003760969 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows the value</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Control Shortcut Dimension 2 Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4165666164 - Action 2173385693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>View or edit dimensions, such as area, project, or department, that you can assign to sales and purchase documents to distribute costs and analyze transaction history.</source>
@@ -379,8 +619,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Action Dimensions - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4165666164 - Action 842829748 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows Contacts</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Show the contacts that belong to this assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Action ShowContacts - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4165666164 - Action 842829748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -389,8 +629,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Action ShowContacts - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4165666164 - Action 2345058688 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows Customers</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Show the customers that belong to this assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Action ShowCustomers - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4165666164 - Action 2345058688 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -399,8 +639,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Action ShowCustomers - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4165666164 - Action 2040719983 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows Items</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Show the items that belong to this assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Assortments - Action ShowItems - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4165666164 - Action 2040719983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -413,30 +653,234 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Cont. Assortment Factbox - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1952902242 - Control 1606343762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assortment Code</source>
+        <trans-unit id="Page 3864375537 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy Lines</source>
+          <target state="">Kopier linjer</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Cont. Assortment Factbox - Control OBT Assortment Code - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1952902242 - Control 1342726215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assortment Description</source>
+        <trans-unit id="Page 3864375537 - NamedType 2613830727" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The document lines that have a G/L account that does not allow direct posting have not been copied to the new document.</source>
+          <target state="">Dokumentlinjerne, der har en G/L-konto, der ikke tillader direkte bogføring, er ikke blevet kopieret til det nye dokument.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - NamedType DirectPostingNotCopiedMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - NamedType 1753513791" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type Filter</source>
+          <target state="">Dokumenttypefilter</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Cont. Assortment Factbox - Control OBT Assortment Description - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - NamedType Text002Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 1204033907 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current Menu Type</source>
+          <target state="">Aktuel Menu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control CurrentMenuTypeValue - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 1204033907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Menu Type</source>
+          <target state="">Menu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control CurrentMenuTypeValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 39415292 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Location filter used when calculation available quantity</source>
+          <target state="">Lokationsfilter, der bruges ved beregning af tilgængeligt antal</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control LocationCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 39415292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Location Filter</source>
+          <target state="">Lokationsfilter</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control LocationCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 2516190258 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items</source>
+          <target state="">Varer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfItems - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 2516190258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items</source>
+          <target state="">Varer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfItems - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 2150292473 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items</source>
+          <target state="">Varer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfItemsAss - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 2150292473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items Assortment</source>
+          <target state="">Varesortiment</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfItemsAss - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3713697243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the lines that represent posted sales credit memos.</source>
+          <target state="">Viser de linjer, der repræsenterer bogførte kreditnotaer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPostedCrMemos - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3713697243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Cr. &amp;Memos</source>
+          <target state="">Bogførte kreditnotaer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPostedCrMemos - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 463979277 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the lines that represent posted invoices.</source>
+          <target state="">Viser de linjer, der repræsenterer bogførte fakturaer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPostedInvoices - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 463979277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted I&amp;nvoices</source>
+          <target state="">Bogførte fakturaer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPostedInvoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 4277556562 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the lines that represent posted return receipts.</source>
+          <target state="">Viser de linjer, der repræsenterer bogførte returkvitteringer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPstdReturnReceipts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 4277556562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Ret&amp;urn Receipts</source>
+          <target state="">Bogførte returkvitteringer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPstdReturnReceipts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 182221868 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the lines that represent posted shipments.</source>
+          <target state="">Viser de linjer, der repræsenterer bogførte forsendelser</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPstdShipments - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 182221868 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Posted Shipments</source>
+          <target state="">Bogførte følgesedler</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPstdShipments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 2636419206 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies which type of posted document lines to show.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control PostedShipmentsBtn - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 2636419206 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Shipments,Posted Invoices,Posted Return Receipts,Posted Cr. Memos,Items,Assortment Items</source>
+          <target state="">Bogførte følgesedler,Bogførte fakturaer,Bogførte returkvitteringer,Bogførte kreditnotaer,Varer,Sortimentsvarer</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control PostedShipmentsBtn - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target state="">Valg</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3423109270 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether to use the original quantity to receive quantities associated with specific shipments. For example, on a posted sales invoice with an original quantity of 20, you can match the 20 items with a specific shipment.</source>
+          <target state="">Angiver, om den oprindelige mængde skal bruges til at modtage mængder, der er forbundet med specifikke forsendelser. For eksempel, på en bogført salgsfaktura med en oprindelig mængde på 20, kan du matche de 20 varer med en specifik forsendelse.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OriginalQuantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3423109270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return Original Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OriginalQuantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 323632896 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if only lines with quantities that are available to be reversed are shown. For example, on a posted sales invoice with an original quantity of 20, and 15 of the items have already been returned, the quantity that is available to be reversed on the posted sales invoice is 5.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control ShowRevLine - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 323632896 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Reversible Lines Only</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control ShowRevLine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3662680955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Comment</source>
+          <target state="">Varebemærkninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment OBTItems - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3745220237 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Comment</source>
+          <target state="">Varebemærkninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment OBTItemsAssortment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 4028989825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Comment</source>
+          <target state="">Varebemærkninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment PostedCrMemos - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 1590467599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Comment</source>
+          <target state="">Varebemærkninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment PostedInvoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 2847578253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Comment</source>
+          <target state="">Varebemærkninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment PostedReturnRcpts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 2004833333 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Comment</source>
+          <target state="">Varebemærkninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment PostedShpts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 139493911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Information</source>
+          <target state="">Vareinformation</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo OBTItems - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 1941811689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Information</source>
+          <target state="">Vareinformation</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo OBTItemsAssortment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3268875589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Information</source>
+          <target state="">Vareinformation</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo PostedCrMemos - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3087087795 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Information</source>
+          <target state="">Vareinformation</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo PostedInvoices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3487690633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Information</source>
+          <target state="">Vareinformation</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo PostedReturnRcpts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3864375537 - Control 3245369521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Information</source>
+          <target state="">Vareinformation</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo PostedShpts - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4065409091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customer Assortment Factbox</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Cust. Assortment Factbox - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 4065409091 - Control 1606343762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assortment Code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Cust. Assortment Factbox - Control OBT Assortment Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 4065409091 - Control 1342726215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assortment Description</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Cust. Assortment Factbox - Control OBT Assortment Description - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 608712426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lines</source>
@@ -511,6 +955,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control Inv. Discount Amount - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 608712426 - Control 734514205 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the currency that amounts are shown in.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control InvCurrencyCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 608712426 - Control 734514205 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control InvCurrencyCode - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 608712426 - Control 2105307182 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the current Inventory of the current Location Code of the item that is available in the inventory.</source>
           <target state="">Viser det tilgængelig antal (Lager minus antal i salgsordre) for aktuel Lokation</target>
@@ -522,6 +976,16 @@
           <target state="">Lager</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control Inventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 608712426 - Control 2542119792 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the Unit Price and Line Amount fields on document lines should be shown with or without VAT.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control InvPricesInclVAT - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 608712426 - Control 2542119792 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prices Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control InvPricesInclVAT - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 608712426 - Control 3948462483 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the referenced item number.</source>
@@ -641,26 +1105,6 @@
           <source>Reverse Unit Cost (LCY)</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control RevUnitCostLCY - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 608712426 - Control 1883400334 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the code for the currency that amounts are shown in.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control SalesInvHeader."Currency Code" - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 608712426 - Control 1883400334 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Currency Code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control SalesInvHeader."Currency Code" - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 608712426 - Control 2934416872 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if the Unit Price and Line Amount fields on document lines should be shown with or without VAT.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control SalesInvHeader."Prices Including VAT" - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 608712426 - Control 2934416872 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Prices Including VAT</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.InvLn Sub - Control SalesInvHeader."Prices Including VAT" - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 608712426 - Control 1225278069 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the number of the customer.</source>
@@ -832,6 +1276,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.ShptLn Sp - Control Item Reference No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 4145799817 - Control 2798413794 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the item has a comment.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.ShptLn Sp - Control ItemComment - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 4145799817 - Control 2798413794 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Comment</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -846,12 +1295,6 @@
           <source>Specifies the location in which the invoice line was registered.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.ShptLn Sp - Control Location Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4145799817 - Control 39415292 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the location code of current inventory and available quantity.</source>
-          <target state="">Viser det tilgængelig antal (Lager minus antal i salgsordre) for aktuel Lokation</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc - S.ShptLn Sp - Control LocationCode - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4145799817 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the number of the involved entry or record, according to the specified number series.</source>
@@ -1019,6 +1462,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control Appl.-to Item Entry - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 2476193583 - Control 3920084379 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the available quantity of the item in the location of the order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control Available - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2476193583 - Control 3920084379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Available</source>
           <target state="">Tilgængeligt antal</target>
@@ -1045,6 +1493,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control Blanket Order No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 2476193583 - Control 574424355 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the currency that amounts are shown in.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control CrMemoCurrencyCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476193583 - Control 574424355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control CrMemoCurrencyCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2476193583 - Control 1051547097 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the posting date of the record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control CrMemoPostingDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476193583 - Control 1051547097 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control CrMemoPostingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2476193583 - Control 1250119386 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the Unit Price and Line Amount fields on document lines should be shown with or without VAT.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control CrMemoPricesInclVAT - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476193583 - Control 1250119386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prices Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control CrMemoPricesInclVAT - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2476193583 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the name of the item or general ledger account, or some descriptive text.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1069,6 +1547,11 @@
           <source>Specifies the referenced item number.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control Item Reference No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2476193583 - Control 2798413794 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the item has a comment.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control ItemComment - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2476193583 - Control 2798413794 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Comment</source>
@@ -1121,6 +1604,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control Quantity - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 2476193583 - Control 2693127238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the new quantity to re-order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control QuantiyToOrder - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2476193583 - Control 2693127238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Order Quantity</source>
           <target state="">Ordreantal</target>
@@ -1131,38 +1619,6 @@
           <source>Specifies the code explaining why the item was returned.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control Return Reason Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2476193583 - Control 1605164564 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the code for the currency that amounts are shown in.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control SalesCrMemoHeader."Currency Code" - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2476193583 - Control 1605164564 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Currency Code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control SalesCrMemoHeader."Currency Code" - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2476193583 - Control 1717442266 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the posting date of the record.</source>
-          <target state="">Angiver bogføringsdatoen for dokumentet</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control SalesCrMemoHeader."Posting Date" - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2476193583 - Control 1717442266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting Date</source>
-          <target state="">Bogføringsdato</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control SalesCrMemoHeader."Posting Date" - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2476193583 - Control 891180818 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if the Unit Price and Line Amount fields on document lines should be shown with or without VAT.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control SalesCrMemoHeader."Prices Including VAT" - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2476193583 - Control 891180818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Prices Including VAT</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Post.Doc-S.Cr.MemoLn S - Control SalesCrMemoHeader."Prices Including VAT" - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2476193583 - Control 1225278069 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the number of the customer.</source>
@@ -1271,6 +1727,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Pst.Doc-RtrnRcptLn Sub - Control Appl.-to Item Entry - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 3284252110 - Control 3920084379 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the available quantity of the item in the location of the order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Pst.Doc-RtrnRcptLn Sub - Control Available - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 3284252110 - Control 3920084379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Available</source>
           <target state="">Tilgængeligt antal</target>
@@ -1322,6 +1783,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Pst.Doc-RtrnRcptLn Sub - Control Item Reference No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 3284252110 - Control 2798413794 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the item has a comment.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Pst.Doc-RtrnRcptLn Sub - Control ItemComment - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 3284252110 - Control 2798413794 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Comment</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1351,6 +1817,11 @@
           <source>Specifies the number of units of the item, general ledger account, or item charge specified on the line.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Pst.Doc-RtrnRcptLn Sub - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3284252110 - Control 2693127238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the new quantity to re-order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Get Pst.Doc-RtrnRcptLn Sub - Control QuantiyToOrder - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3284252110 - Control 2693127238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Order Quantity</source>
@@ -1453,16 +1924,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item Assortment Factbox - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3575581973 - Control 1606343762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assortment Code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item Assortment Factbox - Control OBT Assortment Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3575581973 - Control 1342726215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Assortment Description</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item Assortment Factbox - Control OBT Assortment Description - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Page 1090123890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Attributes</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1523,6 +1984,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item Comment Factbox - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2417765510 - Control 2790486453 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the comment text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item Comment Factbox - Control Comment - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2417765510 - Control 2790486453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item Comment Factbox - Control Comment - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3606192439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Information Factbox</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1570,6 +2041,11 @@
           <source>Specifies the base unit of measure for the item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List - Control Base Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3271202306 - Control 4008583839 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies why the item is blocked.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List - Control Block Reason - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3271202306 - Control 3371302303 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies whether the cost of the item is adjusted.</source>
@@ -1654,6 +2130,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List - Action DimensionsSingle - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3271202306 - Action 5121522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the item card for the selected item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List - Action Show Item - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 3271202306 - Action 5121522 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Show Item</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1664,10 +2145,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List Assortment - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 132187416 - Control 4008583839 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies why the item is blocked.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List Assortment - Control Block Reason - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 132187416 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the item number</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List Assortment - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 132187416 - Control 2693127238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the new quantity to re-order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List Assortment - Control QuantiyToOrder - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 132187416 - Control 2693127238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Order Quantity</source>
@@ -1700,229 +2191,135 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List Assortment - Action DimensionsSingle - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 132187416 - Action 5121522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the item card for the selected item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List Assortment - Action Show Item - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 132187416 - Action 5121522 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Show Item</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List Assortment - Action Show Item - Property Caption</note>
         </trans-unit>
-         <trans-unit id="Page 3864375537 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Copy Lines</source>
-          <target state="">Kopier linjer</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The document lines that have a G/L account that does not allow direct posting have not been copied to the new document.</source>
-          <target state="">Dokumentlinjerne, der har en G/L-konto, der ikke tillader direkte bogføring, er ikke blevet kopieret til det nye dokument.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - NamedType Text000</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document Type Filter</source>
-          <target state="">Dokumenttypefilter</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - NamedType Text002</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 1204033907 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Current Menu Type</source>
-          <target state="">Aktuel Menu</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control CurrentMenuTypeValue - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 1204033907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Menu Type</source>
-          <target state="">Menu</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control CurrentMenuTypeValue - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 39415292 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The Location filter used when calculation available quantity</source>
-          <target state="">Lokationsfilter, der bruges ved beregning af tilgængeligt antal</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control LocationCode - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 39415292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Location Filter</source>
-          <target state="">Lokationsfilter</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control LocationCode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 2516190258 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3602707480 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Items</source>
-          <target state="">Varer</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfItems - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 2516190258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Items</source>
-          <target state="">Varer</target>
+        <trans-unit id="Page 3602707480 - Control 3967890522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the item is an assembly BOM.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfItems - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Assembly BOM - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 2150292473 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Items</source>
-          <target state="">Varer</target>
+        <trans-unit id="Page 3602707480 - Control 3920084379 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the available quantity of the item in the location.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfItemsAss - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Available - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 2150292473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Items Assortment</source>
-          <target state="">Varesortiment</target>
+        <trans-unit id="Page 3602707480 - Control 3920084379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Available</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfItemsAss - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Available - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3713697243 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the lines that represent posted sales credit memos.</source>
-          <target state="">Viser de linjer, der repræsenterer bogførte kreditnotaer</target>
+        <trans-unit id="Page 3602707480 - Control 411531942 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the base unit of measure for the item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPostedCrMemos - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Base Unit of Measure - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3713697243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posted Cr. &amp;Memos</source>
-          <target state="">Bogførte kreditnotaer</target>
+        <trans-unit id="Page 3602707480 - Control 4008583839 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies why the item is blocked.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPostedCrMemos - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Block Reason - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 463979277 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the lines that represent posted invoices.</source>
-          <target state="">Viser de linjer, der repræsenterer bogførte fakturaer</target>
+        <trans-unit id="Page 3602707480 - Control 3371302303 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the cost of the item is adjusted.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPostedInvoices - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Cost is Adjusted - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 463979277 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posted I&amp;nvoices</source>
-          <target state="">Bogførte fakturaer</target>
+        <trans-unit id="Page 3602707480 - Control 2105307182 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the current inventory of the item in the location.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control NoOfPostedInvoices - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Inventory - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 2636419206 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posted Shipments,Posted Invoices,Posted Return Receipts,Posted Cr. Memos,Items,Assortment Items</source>
-          <target state="">Bogførte følgesedler,Bogførte fakturaer,Bogførte returkvitteringer,Bogførte kreditnotaer,Varer,Sortimentsvarer</target>
+        <trans-unit id="Page 3602707480 - Control 2105307182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control PostedShipmentsBtn - Property OptionCaption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Inventory - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 1262539515 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the lines that represent posted return receipts.</source>
-          <target state="">Viser de linjer, der repræsenterer bogførte returkvitteringer</target>
+        <trans-unit id="Page 3602707480 - Control 1037119892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item category code that is assigned to the item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control STRSUBSTNO('(%1)',"No. of Pstd. Return Receipts") - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Item Category Code - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 1262539515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posted Ret&amp;urn Receipts</source>
-          <target state="">Bogførte returkvitteringer</target>
+        <trans-unit id="Page 3602707480 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item number</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control STRSUBSTNO('(%1)',"No. of Pstd. Return Receipts") - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control No. - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3545363969 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the lines that represent posted shipments.</source>
-          <target state="">Viser de linjer, der repræsenterer bogførte forsendelser</target>
+        <trans-unit id="Page 3602707480 - Control 1131563930 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity to order for the item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control STRSUBSTNO('(%1)',"No. of Pstd. Shipments") - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control QuantityToOrder - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3545363969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>&amp;Posted Shipments</source>
-          <target state="">Bogførte følgesedler</target>
+        <trans-unit id="Page 3602707480 - Control 1131563930 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Quantity</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control STRSUBSTNO('(%1)',"No. of Pstd. Shipments") - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control QuantityToOrder - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Options</source>
-          <target state="">Valg</target>
+        <trans-unit id="Page 3602707480 - Control 2454573350 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether there are substitutes for the item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Options - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Substitutes Exist - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3423109270 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies whether to use the original quantity to receive quantities associated with specific shipments. For example, on a posted sales invoice with an original quantity of 20, you can match the 20 items with a specific shipment.</source>
-          <target state="">Angiver, om den oprindelige mængde skal bruges til at modtage mængder, der er forbundet med specifikke forsendelser. For eksempel, på en bogført salgsfaktura med en oprindelig mængde på 20, kan du matche de 20 varer med en specifik forsendelse.</target>
+        <trans-unit id="Page 3602707480 - Control 381961415 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unit cost of the item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OriginalQuantity - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Unit Cost - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3423109270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Return Original Quantity</source>
+        <trans-unit id="Page 3602707480 - Control 2937233469 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unit price of the item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OriginalQuantity - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Unit Price - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 323632896 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if only lines with quantities that are available to be reversed are shown. For example, on a posted sales invoice with an original quantity of 20, and 15 of the items have already been returned, the quantity that is available to be reversed on the posted sales invoice is 5.</source>
+        <trans-unit id="Page 3602707480 - Control 1527594213 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the vendor that is associated with the item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control ShowRevLine - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Control Vendor No. - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 323632896 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Show Reversible Lines Only</source>
+        <trans-unit id="Page 3602707480 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control ShowRevLine - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Action Dimensions - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3662680955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Comment</source>
-          <target state="">Varebemærkninger</target>
+        <trans-unit id="Page 3602707480 - Action 1269018909 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit dimensions for a group of records. You can assign dimension codes to transactions to distribute costs and analyze historical information.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment OBTItems - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Action DimensionsMultiple - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3745220237 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Comment</source>
-          <target state="">Varebemærkninger</target>
+        <trans-unit id="Page 3602707480 - Action 1269018909 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions-&amp;Multiple</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment OBTItemsAssortment - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Action DimensionsMultiple - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 4028989825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Comment</source>
-          <target state="">Varebemærkninger</target>
+        <trans-unit id="Page 3602707480 - Action 391316011 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit the single set of dimensions that are set up for the selected record.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment PostedCrMemos - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Action DimensionsSingle - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 1590467599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Comment</source>
-          <target state="">Varebemærkninger</target>
+        <trans-unit id="Page 3602707480 - Action 391316011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions-Single</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment PostedInvoices - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Action DimensionsSingle - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 2847578253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Comment</source>
-          <target state="">Varebemærkninger</target>
+        <trans-unit id="Page 3602707480 - Action 5121522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the item card for the selected item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment PostedReturnRcpts - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Action Show Item - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 2004833333 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Comment</source>
-          <target state="">Varebemærkninger</target>
+        <trans-unit id="Page 3602707480 - Action 5121522 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Item</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control Item Comment PostedShpts - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 139493911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Information</source>
-          <target state="">Vareinformation</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo OBTItems - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 1941811689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Information</source>
-          <target state="">Vareinformation</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo OBTItemsAssortment - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3268875589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Information</source>
-          <target state="">Vareinformation</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo PostedCrMemos - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3087087795 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Information</source>
-          <target state="">Vareinformation</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo PostedInvoices - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3487690633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Information</source>
-          <target state="">Vareinformation</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo PostedReturnRcpts - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3864375537 - Control 3245369521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Information</source>
-          <target state="">Vareinformation</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Copy Sales Doc. Lines - Control OBTItemInfo PostedShpts - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Item List2 - Action Show Item - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1391401436 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Attributes</source>
@@ -1940,40 +2337,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Sales Line Attributes - Control Attribute - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1391401436 - Control 2006108605 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the name of the item attribute.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Sales Line Attributes - Control Attribute Name - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="Page 1391401436 - Control 2006108605 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Attribute</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page OBT Sales Line Attributes - Control Attribute Name - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1391401436 - Control 2012871929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows Line No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Sales Line Attributes - Control OBT Sales Document Line No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1391401436 - Control 2037690427 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows Document No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Sales Line Attributes - Control OBT Sales Document No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1391401436 - Control 1207861650 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Shows Document Type</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Sales Line Attributes - Control OBT Sales Document Type - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1391401436 - Control 998707401 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the item attribute.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Sales Line Attributes - Control RawValue - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1391401436 - Control 998707401 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Value</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page OBT Sales Line Attributes - Control RawValue - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1391401436 - Control 1131619133 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the item attribute.</source>
@@ -2012,20 +2379,50 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension OBT Sales Order Ext - Control OBTSalesLineAttributesFactbox - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3516433409 - Action 2704334399 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1180040559">
+          <source>Open OBT Inventory List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension OBX Inventory Setup Ext. - Action OBXGetItems - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3516433409 - Action 2704334399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1180040559">
+          <source>Get Items</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension OBX Inventory Setup Ext. - Action OBXGetItems - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4252988536 - Field 2678525765 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Specifies a filter to show customers belonging to a specific assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBT Customer Ext - Field OBT Assortment Filter - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 4252988536 - Field 2678525765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
           <source>Assortment Filter</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBT Customer Ext - Field OBT Assortment Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4252988536 - Field 3629848224 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Specifies whether the customer is included in the filtered assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBT Customer Ext - Field OBT In Assortment - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 4252988536 - Field 3629848224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
           <source>In Assortment</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBT Customer Ext - Field OBT In Assortment - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 4252988536 - Field 1432970951 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Specifies the store number associated with the customer.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBT Customer Ext - Field OBT Store Number - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 4252988536 - Field 1432970951 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
           <source>Store Number</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBT Customer Ext - Field OBT Store Number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4252988536 - Field 232266868 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Specifies a filter to show entries for a specific location.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBT Customer Ext - Field OBX Location Filter - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 4252988536 - Field 232266868 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
           <source>Location Filter</source>
@@ -2033,15 +2430,30 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBT Customer Ext - Field OBX Location Filter - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 227616763 - Field 2678525765 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Specifies a filter to show items belonging to a specific assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBX Item Ext - Field OBT Assortment Filter - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 227616763 - Field 2678525765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Assortment Filter</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBX Item Ext - Field OBT Assortment Filter - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 227616763 - Field 3629848224 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Specifies whether the item is included in the filtered assortment.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBX Item Ext - Field OBT In Assortment - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 227616763 - Field 3629848224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>In Assortment</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBX Item Ext - Field OBT In Assortment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2710414486 - Field 3588257121 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+          <source>Specifies the current inventory of the item at the specified location.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension OBX Sales Line Ext - Field OBX Inventory - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 2710414486 - Field 3588257121 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Inventory</source>

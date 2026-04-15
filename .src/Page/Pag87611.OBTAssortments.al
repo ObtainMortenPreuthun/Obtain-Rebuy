@@ -1,3 +1,7 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Finance.Dimension;
+
 /// <summary>
 /// Page OBT Assortments (ID 87611).
 /// </summary>
@@ -17,35 +21,23 @@ page 87611 "OBT Assortments"
             {
                 field("OBT Assortment Code"; Rec."OBT Assortment Code")
                 {
-                    ApplicationArea = All;
                     NotBlank = false;
-                    ToolTip = 'Shows the value';
                 }
                 field("OBT Assortment Description"; Rec."OBT Assortment Description")
                 {
-                    ApplicationArea = All;
-                    ToolTip = 'Shows the value';
                 }
                 field("OBT Active from Date"; Rec."OBT Active from Date")
                 {
-                    ApplicationArea = All;
-                    ToolTip = 'Shows the value';
                 }
                 field("OBT Active to Date"; Rec."OBT Active to Date")
                 {
-                    ApplicationArea = All;
-                    ToolTip = 'Shows the value';
                 }
                 field("Dimension Set ID"; Rec."Dimension Set ID")
                 {
-                    ApplicationArea = All;
                     Visible = false;
-                    ToolTip = 'Shows the value';
                 }
                 field("Shortcut Dimension 1 Code"; Rec."Shortcut Dimension 1 Code")
                 {
-                    ApplicationArea = All;
-                    ToolTip = 'Shows the value';
                     trigger OnValidate()
                     begin
                         OBTShortcutDimension1CodeOnAfterV();
@@ -53,8 +45,6 @@ page 87611 "OBT Assortments"
                 }
                 field("Shortcut Dimension 2 Code"; Rec."Shortcut Dimension 2 Code")
                 {
-                    ApplicationArea = All;
-                    ToolTip = 'Shows the value';
                     trigger OnValidate()
                     begin
                         OBTShortcutDimension2CodeOnAfterV();
@@ -88,30 +78,27 @@ page 87611 "OBT Assortments"
         {
             action(ShowItems)
             {
-                ApplicationArea = All;
                 Caption = 'Show Items';
                 Image = ShowList;
-                ToolTip = 'Shows Items';
+                ToolTip = 'Show the items that belong to this assortment.', Comment = '%';
                 RunObject = Page "OBT Assortment Items";
                 RunPageLink = "OBT Assortment Code" = FIELD("OBT Assortment Code");
                 RunPageView = SORTING("OBT Assortment Code", "OBT Item No.");
             }
             action(ShowCustomers)
             {
-                ApplicationArea = All;
                 Caption = 'Show Customers';
                 Image = ShowList;
-                ToolTip = 'Shows Customers';
+                ToolTip = 'Show the customers that belong to this assortment.', Comment = '%';
                 RunObject = Page "OBT Assortment Customers";
                 RunPageLink = "OBT Assortment Code" = FIELD("OBT Assortment Code");
                 RunPageView = SORTING("OBT Assortment Code", "OBT Customer No.");
             }
             action(ShowContacts)
             {
-                ApplicationArea = All;
                 Caption = 'Show Contacts';
                 Image = ShowList;
-                ToolTip = 'Shows Contacts';
+                ToolTip = 'Show the contacts that belong to this assortment.', Comment = '%';
                 RunObject = Page "OBT Assortment Contacts";
                 RunPageLink = "OBT Assortment Code" = FIELD("OBT Assortment Code");
                 RunPageView = SORTING("OBT Assortment Code", "OBT Contact No.");

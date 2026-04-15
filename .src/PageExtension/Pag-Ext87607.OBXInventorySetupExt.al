@@ -1,3 +1,7 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Inventory.Setup;
+
 pageextension 87607 "OBX Inventory Setup Ext." extends "Inventory Setup"
 {
     layout

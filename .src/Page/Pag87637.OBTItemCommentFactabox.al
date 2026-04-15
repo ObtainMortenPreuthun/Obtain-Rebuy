@@ -1,3 +1,7 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Foundation.Comment;
+
 /// <summary>
 /// Page OBT Item Comment Factbox (ID 87637).
 /// </summary>
@@ -21,8 +25,8 @@ page 87637 "OBT Item Comment Factbox"
             {
                 field(Comment; Rec.Comment)
                 {
-                    ApplicationArea = All;
-
+                    Caption = 'Comment';
+                    ToolTip = 'Specifies the comment text.';
                 }
             }
         }

@@ -1,3 +1,7 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Sales.Document;
+
 /// <summary>
 /// Page OBT Sales Line Attributes (ID 87610).
 /// </summary>
@@ -22,21 +26,15 @@ page 87610 "OBT Sales Line Attributes"
                 ShowCaption = false;
                 field("OBT Sales Document Type"; Rec."OBT Sales Document Type")
                 {
-                    ApplicationArea = All;
                     Visible = false;
-                    ToolTip = 'Shows Document Type';
                 }
                 field("OBT Sales Document No."; Rec."OBT Sales Document No.")
                 {
-                    ApplicationArea = All;
                     Visible = false;
-                    ToolTip = 'Shows Document No.';
                 }
                 field("OBT Sales Document Line No."; Rec."OBT Sales Document Line No.")
                 {
-                    ApplicationArea = All;
                     Visible = false;
-                    ToolTip = 'Shows Line No.';
                 }
                 field(Attribute; rec.OBTGetAttributeNameInCurrentLanguage())
                 {
@@ -56,14 +54,11 @@ page 87610 "OBT Sales Line Attributes"
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Attribute';
-                    ToolTip = 'Specifies the name of the item attribute.';
                     Visible = NOT TranslatedValuesVisible;
                 }
                 field(RawValue; rec."OBT Value")
                 {
                     ApplicationArea = Basic, Suite;
-                    Caption = 'Value';
-                    ToolTip = 'Specifies the value of the item attribute.';
                     Visible = NOT TranslatedValuesVisible;
                 }
             }

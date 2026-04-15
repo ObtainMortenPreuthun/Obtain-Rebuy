@@ -4,8 +4,7 @@
     "al.codeAnalyzers": [
         "${CodeCop}",
         "${UICop}",
-        "${PerTenantExtensionCop}",
-        "${analyzerFolder}BusinessCentral.LinterCop.dll"
+        "${PerTenantExtensionCop}"
     ],
     "editor.inlineSuggest.enabled": true
 }

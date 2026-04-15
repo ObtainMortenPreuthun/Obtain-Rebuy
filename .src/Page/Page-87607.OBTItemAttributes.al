@@ -1,3 +1,9 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Inventory.Item;
+using Microsoft.Inventory.Item.Attribute;
+using System.Environment;
+
 /// <summary>
 /// Page OBT Item Attributes Factbox (ID 87607).
 /// </summary>

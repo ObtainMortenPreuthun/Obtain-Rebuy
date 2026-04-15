@@ -1,3 +1,7 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Sales.Document;
+
 /// <summary>
 /// PageExtension OBT Sales Order Ext (ID 87606) extends Record Sales Order.
 /// </summary>
@@ -50,7 +54,7 @@ pageextension 87606 "OBT Sales Order Ext" extends "Sales Order"
                     OBTCopySalesDoc.OBTGetPstdDocLines(Rec);
                 end;
             }
-            
+
         }
         addafter("Pla&nning")
         {

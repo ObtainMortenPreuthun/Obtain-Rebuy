@@ -1,3 +1,7 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Utilities;
+
 /// <summary>
 /// Codeunit OBT Copy Document Event (ID 87631).
 /// </summary>
@@ -11,7 +15,7 @@ codeunit 87631 "OBT Copy Document Event"
 
     end;
 
-    
+
 
     var
 

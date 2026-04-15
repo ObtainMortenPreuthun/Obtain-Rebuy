@@ -1,3 +1,5 @@
+namespace Obtain.Rebuy;
+
 /// <summary>
 /// Page OBT Item Assortment Factbox (ID 87613).
 /// </summary>
@@ -18,9 +20,7 @@ page 87619 "OBT Cont. Assortment Factbox"
             {
                 field("OBT Assortment Code"; Rec."OBT Assortment Code")
                 {
-                    Caption = 'Assortment Code';
                     ShowCaption = false;
-                    ApplicationArea = All;
                     trigger OnDrillDown()
                     begin
                         ShowAssortment();
@@ -28,9 +28,7 @@ page 87619 "OBT Cont. Assortment Factbox"
                 }
                 field("OBT Assortment Description"; Rec."OBT Assortment Description")
                 {
-                    Caption = 'Assortment Description';
                     ShowCaption = false;
-                    ApplicationArea = All;
                     trigger OnDrillDown()
                     begin
                         ShowAssortment();

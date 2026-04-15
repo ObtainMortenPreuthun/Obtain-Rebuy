@@ -1,3 +1,5 @@
+namespace Obtain.Rebuy;
+
 /// <summary>
 /// Page OBT Assortment Items (ID 87612).
 /// </summary>
@@ -18,19 +20,15 @@ page 87612 "OBT Assortment Items"
             {
                 field("OBT Assortment Code"; Rec."OBT Assortment Code")
                 {
-                    ApplicationArea = all;
                 }
                 field("OBT Assortment Description"; Rec."OBT Assortment Description")
                 {
-                    ApplicationArea = all;
                 }
                 field("OBT Item No."; Rec."OBT Item No.")
                 {
-                    ApplicationArea = all;
                 }
                 field("OBT Item Description"; Rec."OBT Item Description")
                 {
-                    ApplicationArea = all;
                 }
             }
         }
@@ -48,9 +46,9 @@ page 87612 "OBT Assortment Items"
         {
             action(SelectItems)
             {
-                ApplicationArea = All;
                 Caption = 'Assortment Items';
                 image = Insert;
+                ToolTip = 'Select items to add to the assortment.', Comment = '%';
                 trigger OnAction()
                 var
                     lAssortments: Record "OBT Assortment";

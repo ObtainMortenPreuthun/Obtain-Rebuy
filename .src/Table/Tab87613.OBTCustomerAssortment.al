@@ -1,3 +1,7 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Sales.Customer;
+
 /// <summary>
 /// Table OBT Customer Assortment (ID 87613).
 /// </summary>
@@ -6,22 +10,21 @@ table 87613 "OBT Customer Assortment"
     Caption = 'Customer Assortment';
     DataClassification = ToBeClassified;
     LookupPageId = "OBT Assortment Customers";
+    DrillDownPageId = "OBT Assortment Customers";
 
     fields
     {
         field(1; "OBT Customer No."; Code[20])
         {
             Caption = 'Customer No.,';
-            DataClassification = ToBeClassified;
             TableRelation = Customer;
-
+            ToolTip = 'Specifies the customer number.', Comment = '%';
         }
         field(5; "OBT Assortment Code"; Code[20])
         {
             Caption = 'Assortment Code';
-            DataClassification = ToBeClassified;
             TableRelation = "OBT Assortment";
-
+            ToolTip = 'Specifies the code of the assortment.', Comment = '%';
         }
         field(21; "OBT Customer Name"; Text[100])
         {
@@ -29,6 +32,7 @@ table 87613 "OBT Customer Assortment"
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = lookup(customer.Name where("No." = field("OBT Customer No.")));
+            ToolTip = 'Specifies the name of the customer.', Comment = '%';
         }
         field(22; "OBT Assortment Description"; Text[100])
         {
@@ -36,6 +40,7 @@ table 87613 "OBT Customer Assortment"
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = lookup("OBT Assortment"."OBT Assortment Description" where("OBT Assortment Code" = field("OBT Assortment Code")));
+            ToolTip = 'Specifies the description of the assortment.', Comment = '%';
         }
         field(23; "OBT Customer E-mail"; Text[100])
         {
@@ -44,6 +49,7 @@ table 87613 "OBT Customer Assortment"
             ExtendedDatatype = EMail;
             FieldClass = FlowField;
             CalcFormula = lookup(customer."E-Mail" where("No." = field("OBT Customer No.")));
+            ToolTip = 'Specifies the e-mail address of the customer.', Comment = '%';
 
         }
 

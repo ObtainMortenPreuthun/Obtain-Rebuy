@@ -1,3 +1,9 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Finance.Dimension;
+using Microsoft.Inventory.Item.Catalog;
+using Microsoft.Sales.History;
+
 /// <summary>
 /// Page OBT Get Post.Doc-S.Cr.MemoLn S (ID 87628).
 /// </summary>
@@ -9,6 +15,7 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
     PageType = ListPart;
     SourceTable = "Sales Cr.Memo Line";
     SourceTableView = sorting("Document No.", "Line No.") Order(descending);
+    ApplicationArea = All;
 
     layout
     {
@@ -26,7 +33,7 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
                     ToolTip = 'Specifies the credit memo number.';
                     Editable = false;
                 }
-                field("SalesCrMemoHeader.""Posting Date"""; SalesCrMemoHeader."Posting Date")
+                field(CrMemoPostingDate; SalesCrMemoHeader."Posting Date")
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Posting Date';
@@ -151,29 +158,28 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Order Quantity';
+                    ToolTip = 'Specifies the new quantity to re-order.';
                     Editable = true;
                     DecimalPlaces = 0 : 2;
                     BlankZero = true;
                     trigger OnValidate()
-                    var
-                        lOBTGetDocumentLinesFunction: Codeunit OBTGetDocumentLinesFunction;
                     begin
-                        IF OBTQtyBuffer.GET(115, Rec."Document No.", rec."Line No.") then begin
-                            OBTQtyBuffer."OBT Quantity" := OBTQty;
-                            OBTQtyBuffer."OBT Item No." := rec."No.";
-                            OBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
-                            OBTQtyBuffer."OBT Line Type" := rec.Type;
-                            OBTQtyBuffer.Modify();
+                        IF TempOBTQtyBuffer.GET(115, Rec."Document No.", rec."Line No.") then begin
+                            TempOBTQtyBuffer."OBT Quantity" := OBTQty;
+                            TempOBTQtyBuffer."OBT Item No." := rec."No.";
+                            TempOBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
+                            TempOBTQtyBuffer."OBT Line Type" := rec.Type;
+                            TempOBTQtyBuffer.Modify();
                         end else begin
-                            clear(OBTQtyBuffer);
-                            OBTQtyBuffer."OBT Table Number" := 115;
-                            OBTQtyBuffer."OBT Document No." := rec."Document No.";
-                            OBTQtyBuffer."OBT Document Line No." := rec."Line No.";
-                            OBTQtyBuffer."OBT Item No." := rec."No.";
-                            OBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
-                            OBTQtyBuffer."OBT Line Type" := rec.Type;
-                            OBTQtyBuffer."OBT Quantity" := OBTQty;
-                            OBTQtyBuffer.Insert();
+                            clear(TempOBTQtyBuffer);
+                            TempOBTQtyBuffer."OBT Table Number" := 115;
+                            TempOBTQtyBuffer."OBT Document No." := rec."Document No.";
+                            TempOBTQtyBuffer."OBT Document Line No." := rec."Line No.";
+                            TempOBTQtyBuffer."OBT Item No." := rec."No.";
+                            TempOBTQtyBuffer."OBT Unit of Measure Code" := rec."Unit of Measure Code";
+                            TempOBTQtyBuffer."OBT Line Type" := rec.Type;
+                            TempOBTQtyBuffer."OBT Quantity" := OBTQty;
+                            TempOBTQtyBuffer.Insert();
                         end;
                     end;
                 }
@@ -210,7 +216,7 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
                     ToolTip = 'Specifies the net amount, excluding any invoice discount amount, that must be paid for products on the line.';
                     Editable = false;
                 }
-                field("SalesCrMemoHeader.""Currency Code"""; SalesCrMemoHeader."Currency Code")
+                field(CrMemoCurrencyCode; SalesCrMemoHeader."Currency Code")
                 {
                     ApplicationArea = SalesReturnOrder;
                     Caption = 'Currency Code';
@@ -218,7 +224,7 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
                     Visible = false;
                     Editable = false;
                 }
-                field("SalesCrMemoHeader.""Prices Including VAT"""; SalesCrMemoHeader."Prices Including VAT")
+                field(CrMemoPricesInclVAT; SalesCrMemoHeader."Prices Including VAT")
                 {
                     ApplicationArea = SalesReturnOrder;
                     Caption = 'Prices Including VAT';
@@ -292,6 +298,7 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Available';
+                    ToolTip = 'Specifies the available quantity of the item in the location of the order.';
                     Editable = false;
                     DecimalPlaces = 0 : 2;
 
@@ -300,6 +307,7 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Item Comment';
+                    ToolTip = 'Specifies whether the item has a comment.';
                     Editable = false;
                 }
             }
@@ -371,6 +379,11 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
         IsHandled: Boolean;
         Result: Boolean;
     begin
+        if GoToFirstOnNextFind then begin
+            Which := '-';
+            GoToFirstOnNextFind := false;
+        end;
+
         IsHandled := false;
         OnFindRecordOnBeforeFind(Rec, Which, Result, IsHandled);
         if IsHandled then
@@ -424,22 +437,26 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
 
     trigger OnOpenPage()
     begin
+        if Rec.FindFirst() then;
+    end;
+
+    procedure GoToFirst()
+    begin
+        GoToFirstOnNextFind := true;
     end;
 
     var
         SalesCrMemoHeader: Record "Sales Cr.Memo Header";
         SalesCrMemoLine: Record "Sales Cr.Memo Line";
         TempSalesCrMemoLine: Record "Sales Cr.Memo Line" temporary;
+        TempOBTQtyBuffer: Record "OBT Get Post Buffer" temporary;
+        OBTItemCalcAvail: Codeunit "OBT Item CalcAvail ItemNo";
         UnitPrice: Decimal;
         LineAmount: Decimal;
-        [InDataSet]
+        OBTQty: Decimal;
+        GoToFirstOnNextFind: Boolean;
         DocumentNoHideValue: Boolean;
         ShowRec: Boolean;
-
-        OBTItemCalcAvail: Codeunit "OBT Item CalcAvail ItemNo";
-
-        OBTQtyBuffer: Record "OBT Get Post Buffer" temporary;
-        OBTQty: Decimal;
 
     local procedure IsFirstDocLine(): Boolean
     begin
@@ -522,15 +539,15 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
     /// <param name="FromOBTQtyBuffer">VAR Record "OBT Sales Line Copy Buffer".</param>
     procedure OBTQtyBufferLine(var FromOBTQtyBuffer: Record "OBT Get Post Buffer")
     begin
-        OBTQtyBuffer.reset;
-        OBTQtyBuffer.SetFilter(OBTQtyBuffer."OBT Quantity", '<>%1', 0);
+        TempOBTQtyBuffer.reset;
+        TempOBTQtyBuffer.SetFilter(TempOBTQtyBuffer."OBT Quantity", '<>%1', 0);
         FromOBTQtyBuffer.reset;
         FromOBTQtyBuffer.deleteall;
-        IF OBTQtyBuffer.findfirst then
+        IF TempOBTQtyBuffer.findfirst then
             repeat
-                FromOBTQtyBuffer := OBTQtyBuffer;
+                FromOBTQtyBuffer := TempOBTQtyBuffer;
                 FromOBTQtyBuffer.insert;
-            until OBTQtyBuffer.next = 0;
+            until TempOBTQtyBuffer.next = 0;
 
     end;
 
@@ -554,9 +571,9 @@ page 87628 "OBT Get Post.Doc-S.Cr.MemoLn S"
 
     local procedure OBTGetOrderQty(): Decimal
     begin
-        clear(OBTQtyBuffer);
-        IF OBTQtyBuffer.get(115, rec."Document No.", rec."Line No.") THEN
-            exit(OBTQtyBuffer."OBT Quantity")
+        clear(TempOBTQtyBuffer);
+        IF TempOBTQtyBuffer.get(115, rec."Document No.", rec."Line No.") THEN
+            exit(TempOBTQtyBuffer."OBT Quantity")
         else
             exit(0);
     end;

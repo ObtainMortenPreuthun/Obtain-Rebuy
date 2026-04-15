@@ -1,3 +1,5 @@
+namespace Obtain.Rebuy;
+
 /// <summary>
 /// Enum OBT Sal. Line Type Copy Buff (ID 87623).
 /// </summary>

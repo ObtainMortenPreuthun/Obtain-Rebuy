@@ -1,3 +1,8 @@
+namespace Obtain.Rebuy;
+
+using Microsoft.Foundation.Comment;
+using Microsoft.Inventory.Item;
+
 /// <summary>
 /// Codeunit OBT Item CalcAvail ItemNo (ID 87630).
 /// </summary>
@@ -12,12 +17,6 @@ codeunit 87630 "OBT Item CalcAvail ItemNo"
     /// <param name="pShipmentDate">Date.</param>
     /// <returns>Return value of type Decimal.</returns>
     procedure OBTItemCalcAvailable(pItemNo: Code[20]; pVariantCode: Code[10]; pLocationFilter: Text; pShipmentDate: Date): Decimal
-    var
-        LookaheadDateformula: DateFormula;
-        GrossRequirement: Decimal;
-        ScheduledReceipt: Decimal;
-        PeriodType: Enum "Analysis Period Type";
-        lAvaildate: date;
     begin
         if gitem.get(pItemNo) then begin
             gitem.reset;
@@ -83,7 +82,5 @@ codeunit 87630 "OBT Item CalcAvail ItemNo"
 
     var
         gItem: Record Item;
-        gAvailableToPromise: Codeunit "Available to Promise";
-        gUOMMgt: Codeunit "Unit of Measure Management";
 }
 

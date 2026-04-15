@@ -1,3 +1,5 @@
+namespace Obtain.Rebuy;
+
 /// <summary>
 /// Page OBT Assortment Contacts (ID 87617).
 /// </summary>
@@ -18,23 +20,18 @@ page 87617 "OBT Assortment Contacts"
             {
                 field("OBT Assortment Code"; Rec."OBT Assortment Code")
                 {
-                    ApplicationArea = all;
                 }
                 field("OBT Assortment Description"; Rec."OBT Assortment Description")
                 {
-                    ApplicationArea = all;
                 }
                 field("OBT Contact No."; Rec."OBT Contact No.")
                 {
-                    ApplicationArea = all;
                 }
                 field("OBT Contact Name"; rec."OBT Contact Name")
                 {
-                    ApplicationArea = all;
                 }
                 field("OBT Copntact E-mail"; Rec."OBT Copntact E-mail")
                 {
-                    ApplicationArea = all;
                 }
             }
         }
@@ -54,9 +51,9 @@ page 87617 "OBT Assortment Contacts"
         {
             action(SelectContact)
             {
-                ApplicationArea = All;
                 Caption = 'Assortment Contacts';
                 image = Insert;
+                ToolTip = 'Select contacts to add to the assortment.', Comment = '%';
                 trigger OnAction()
                 var
                     lAssortments: Record "OBT Assortment";
